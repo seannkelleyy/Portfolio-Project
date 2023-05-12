@@ -8,7 +8,7 @@ function NameAndPhoto(){
             Some hobbies of mine include spending time with my wife and dog, going 
             on walks in metroparks, working on cars, taking care of houseplants and 
                 traveling. </p>
-                <img src="public/Sean.jpg" alt="Sean Kelley"/>
+                <img src="public/MediumSean.jpeg" alt="Sean Kelley"/>
         </>
     );
 }

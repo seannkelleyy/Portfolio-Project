@@ -1,14 +1,12 @@
 function Hobbies() {
     return (
-        <>
+        <div className="hobbies-section">
             <h2>Hobbies</h2>
-            <ul>
-                <li>Traveling</li>
-                <li>Working on cars</li>
-                <li>Going on walks with my wife and dog</li>
-                <li>Growing houseplants</li>
-            </ul>
-        </>
+            <p>Traveling</p>
+            <p>Working on cars</p>
+            <p>Going on walks with my wife and dog</p>
+            <p>Growing houseplants</p>
+        </div>
     );
 }
 

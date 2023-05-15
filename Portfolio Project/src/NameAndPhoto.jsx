@@ -1,16 +1,23 @@
 function NameAndPhoto(){
-    return(
+    return (
         <>
-        <h1>Sean Kelley</h1>
-        <h2>Software Engineer Intern</h2>
-        <p>Hi! I am a software engineer intern at Neudeic, as well as a student 
-            at The Ohio State University majoring in Computer Science and Engineering.
-            Some hobbies of mine include spending time with my wife and dog, going 
-            on walks in metroparks, working on cars, taking care of houseplants and 
-                traveling. </p>
-                <img src="public/MediumSean.jpeg" alt="Sean Kelley"/>
+        <div className="name">
+            <p>Hi, I&#39;m Sean.</p>
+        </div>
+         <div className="main-image">
+            <img src="public/Sean.jpg" alt="Sean Kelley" width="400px" height="475px" />
+            </div>
+        <div className="intro">
+            <p>
+            I am a software engineering intern at Neudesic and a
+                student at The Ohio State University. I am very interested
+                    in full-stack development with experience working with C# 
+                    and .NET, as well as ReactJS. Software development is 
+                    my passion and I am always looking to learn new things.
+            </p>
+        </div>
         </>
     );
 }
 
-export default NameAndPhoto;
+export default NameAndPhoto; 

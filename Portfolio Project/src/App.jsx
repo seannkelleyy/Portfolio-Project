@@ -3,6 +3,8 @@ import Goals from './Goals';
 import Hobbies from './Hobbies';
 import Projects from './Projects';
 import NameAndPhoto from './NameAndPhoto';
+import MemeSlider from './MemeSlider';
+import Memes from './Memes'
 
 function App() {
 
@@ -15,6 +17,7 @@ function App() {
         <div><Projects /></div>
         <div><Hobbies /></div>
       </div>
+      <div><MemeSlider slides={Memes} /></div>
     </div>
   )
 }

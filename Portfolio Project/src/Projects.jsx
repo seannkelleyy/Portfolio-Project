@@ -1,19 +1,17 @@
 function Projects() {
     return (
-        <>
+        <div className="projects-section">
             <h2>Projects</h2>
-            <ul>
-                <li>
+                <p>
                     <a href="https://github.com/seannkelleyy/Website">My first website</a>
-                </li>
-                <li>
+                </p>
+                <p>
                     <a href="https://github.com/seannkelleyy/Portfolio-Project">This Website</a>
-                </li>
-                <li>
+                </p>
+                <p>
                     <a href="https://github.com/seannkelleyy/MortgageCalculator'">Mortgage Calculator</a>
-                </li>
-            </ul>
-        </>
+                </p>
+        </div>
     );
 }
 

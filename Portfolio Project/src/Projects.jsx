@@ -9,7 +9,7 @@ function Projects() {
                     <a href="https://github.com/seannkelleyy/Portfolio-Project">This Website</a>
                 </p>
                 <p>
-                    <a href="https://github.com/seannkelleyy/MortgageCalculator'">Mortgage Calculator</a>
+                    <a href="https://github.com/seannkelleyy/MortgageCalculator">Mortgage Calculator</a>
                 </p>
         </div>
     );

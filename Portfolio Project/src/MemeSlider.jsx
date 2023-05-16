@@ -2,10 +2,9 @@
 import { useState } from 'react';
 import { Memes } from './Memes';
 
-
 const ImageSlider = ( slides ) => {
   const [current, setCurrent] = useState(0);
-  const length = slides.length;
+    const length = slides.length;
 
     const nextSlide = () => {
         if (Memes[current + 1]) {
@@ -27,22 +26,24 @@ const ImageSlider = ( slides ) => {
 
 
 
-  return (
-    <section className='slider'>          
-          <button className='left-arrow' onClick={prevSlide}>⇐</button>
-          <button className='right-arrow' onClick={nextSlide}>⇒</button>
-      {Memes.map((slide, index) => {
-        return (
-          <div
-            className={index === current ? 'active' : 'slide'}
-            key={index}>
-            {index === current && (
-              <img src={slide.meme} alt='meme' className='image' />
-            )}
-          </div>
-        );
-      })}
-    </section>
+    return (
+    <>
+        <p className='larger-margin'>Thanks for visiting my portfolio, enjoy these memes!</p>
+        <section className='slider'>         
+            <button className='left-arrow' onClick={prevSlide}>⇐</button>
+            <button className='right-arrow' onClick={nextSlide}>⇒</button>
+            {Memes.map((slide, index) => {
+                return (
+                    <div
+                        className={index === current ? 'active' : 'slide'}
+                        key={index}>
+                        {index === current && (
+                        <img src={slide.meme} alt='meme' className='image' />)}
+                    </div>
+                );
+            })}
+        </section>
+    </>
   );
 };
 

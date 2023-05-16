@@ -1,3 +1,5 @@
+/*------ Entire Site------*/
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   color: #000000;
@@ -16,24 +18,14 @@ html {
 }
 
 .page {
-  position: static;
-  width: 960px;
-  margin: 10px auto 10px auto;
-  padding: 20px;
-
-  height: auto;
-  background-color: #ffffff}
-    
-a {
-  font-weight: 500;
-}
-a:hover{
-  color: blue;
+  margin: 50px;
+  min-width: auto;
+  max-width: 1200px;
+  background-color: #ffffff
 }
 
 body {
   align-items: center;
-  margin: 0;
   display: flex;
   background-color: #ffffff;
   place-items: center;
@@ -44,68 +36,86 @@ body {
   height:100px;
 }
 
-
-.main-image img{
-  width: 50%;
-  left: 5%;
-  border-radius: 100%;
-  border: 5px solid cyan;
-}
-
-.name {
-  padding-top: 50px;
-  padding-bottom: 0px;
-  font-size: 3em;
+a:hover{
+  color: blue;
 }
 
 h1 {
   font-size: 2em;
-  line-height: 1.1;
-  margin:0px;
 }
 
 h2{
-  font-size: 1.2em;
+  font-size: 2.25em;
 }
 
 p{
-  font-size: 1.2em;
+  font-size: 1.75em;
 }
 
-.goals-section, .hobbies-section, .projects-section{
-  padding: 5px;
-  float: left;
-  width: 250px;
+.larger-margin {
+  padding: 50px;
+  margin: 20px;
+}
+
+
+/*-----Name and Photo component------*/
+
+.name-and-photo{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-image img{
   height: auto;
-  margin: 10px;
+  max-width: 50%;
+  left: 5%;
+  border-radius: 100%;
+  border: 5px solid black;
+}
+
+.name {
+  padding-top: 50px;
+  font-size: 3em;
+}
+
+/*------Goals, Hobbies, Projects sections-------*/
+.goals-section, .hobbies-section, .projects-section{
+  padding: 20px;
+  float: left;
+  width: 100%;
+  height: auto;
+  margin: 10%;
   background-color: #ffffff;
+  border-radius: 10px;
   box-shadow: 0 4px 5px 0 black, 0 6px 20px 0 black;
+  
 }
 
 .goals-section:hover, .hobbies-section:hover, .projects-section:hover, img:hover{
   transform: scale(1.02);
 }
 
-
-.grid-container-top{
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-auto-rows: minmax(100px, auto);
-  grid-column-gap: 50px;
-  grid-gap: 10px;
-}
+/*------ Containter used to layout Goals, Hobbies, and Projects-------*/
 
 .grid-container-bottom{
   display: inline-grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: minmax(100px, auto);
-  grid-column-gap: 50px;
+  grid-column-gap: 10%;
 }
+
+@media screen and (0 < width < 1200px) {
+  .grid-container-bottom{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*-------Top Navigation Bar-------*/
 
 .top-bar{
   position: fixed;
   z-index: 1;
-  width: 85%;
+  width: 83%;
   left: 0%;
   top: 0px;
   height: 50px;
@@ -126,10 +136,10 @@ header {
   cursor: pointer;
 }
 
-.nav__links a, .cta, .overlay__content a {
-  font-family: "Montserrat", sans-serif;
+.contact {
+  font-family: "Arial", sans-serif;
   font-weight: 500;
-  color: #edf0f1;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -142,100 +152,26 @@ header {
   padding: 0px 20px;
 }
 
-.nav__links li a {
-  transition: color 0.3s ease 0s;
-}
-
-.nav__links li a:hover {
-  color: #0088a9;
-}
-
-.cta {
+.contact {
   padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: rgb(12, 134, 165);
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease 0s;
 }
 
-.cta:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+.contact:hover {
+  background-color: rgba(12, 134, 165, 0.8);
 }
 
-
-.menu {
-  display: none;
-}
-
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  background-color: #24252a;
-  overflow-x: hidden;
-  transition: width 0.5s ease 0s;
-}
-
-.overlay--active {
-  width: 100%;
-}
-
-.overlay__content {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.overlay a {
-  padding: 15px;
-  font-size: 36px;
-  display: block;
-  transition: color 0.3s ease 0s;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-  color: #0088a9;
-}
-.overlay .close {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  color: #edf0f1;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
-  }
-  .overlay .close {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .nav__links,
-  .cta {
-    display: none;
-  }
-  .menu {
-    display: initial;
-  }
-}
+/*------Meme Slider-------*/
 
 .slider {
   padding: 50px;
   position: relative;
-  height: 25%;
+  height: auto;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,42 +187,70 @@ header {
 .right-arrow{
   position: absolute;
   top: 50%;
-  right: 32px;
+  right: 10%;
   font-size: 3rem;
   color: #000;
   background-color: #ffffff;
   border-radius: 10px;
   opacity: .75;
-  z-index: 10;
+  z-index: 1;
   cursor: pointer;
-  user-select: none;
 }
 
 .left-arrow {
   position: absolute;
   top: 50%;
-  left: 32px;
+  left: 10%;
   font-size: 3rem;
   color: #000;
   background-color: #ffffff;
   border-radius: 10px;
-  opacity: .9;
-  z-index: 10;
+  opacity: .75;
+  z-index: 1;
   cursor: pointer;
-  user-select: none;
 }
 
 .left-arrow:hover, .right-arrow:hover {
   background-color: rgb(156, 184, 235);
 }
 
-.slide {
-  opacity: 0;
-  transition-duration: 1s ease;
+@media screen and (0 < width < 1050px) {
+
+  .image {
+      width: 70%;
+      height: 50%;
+      border-radius: 10px;
+    }
+
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 2rem;
+    color: #000;
+    background-color: #ffffff;
+    border-radius: 10px;
+    opacity: .75;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 2rem;
+    color: #000;
+    background-color: #ffffff;
+    border-radius: 10px;
+    opacity: .75;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .left-arrow:hover,
+  .right-arrow:hover {
+    background-color: rgb(156, 184, 235);
+  }
 }
 
-.slide.active {
-  opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08);
-}

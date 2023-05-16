@@ -5,13 +5,13 @@ function NameAndPhoto(){
             <p>Hi, I&#39;m Sean.</p>
         </div>
          <div className="main-image">
-            <img src="public/Sean.jpg" alt="Sean Kelley" width="400px" height="475px" />
+            <img src="/Sean.jpg" alt="Sean Kelley" />
             </div>
         <div className="intro">
-            <p>
+            <p className="larger-margin">
             I am a software engineering intern at Neudesic and a
                 student at The Ohio State University. I am very interested
-                    in full-stack development with experience working with C# 
+                    in full-stack development, with experience working with C# 
                     and .NET, as well as ReactJS. Software development is 
                     my passion and I am always looking to learn new things.
             </p>

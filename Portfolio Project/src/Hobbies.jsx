@@ -6,6 +6,7 @@ function Hobbies() {
             <p>Working on cars</p>
             <p>Going on walks with my wife and dog</p>
             <p>Growing houseplants</p>
+            <p>History</p>
         </div>
     );
 }

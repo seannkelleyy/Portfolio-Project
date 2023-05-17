@@ -63,6 +63,7 @@ p{
 .name-and-photo{
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 
 .main-image img{
@@ -165,6 +166,26 @@ header {
   background-color: rgba(12, 134, 165, 0.8);
 }
 
+@media screen and (0 < width < 800px) {
+
+  header {
+      height: 25px;
+    }
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo {
+    scale: 50%;
+  }
+
+  .contact {
+    scale: 70%;
+  }
+
+}
+
 /*------Meme Slider-------*/
 
 .slider {
@@ -214,18 +235,18 @@ header {
   background-color: rgb(156, 184, 235);
 }
 
-@media screen and (0 < width < 1050px) {
+@media screen and (0 < width < 1000px) {
 
   .image {
-      width: 70%;
-      height: 50%;
+      width: 500px;
+      height: 300px;
       border-radius: 10px;
     }
 
   .right-arrow {
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 15%;
     font-size: 2rem;
     color: #000;
     background-color: #ffffff;
@@ -238,7 +259,7 @@ header {
   .left-arrow {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 15%;
     font-size: 2rem;
     color: #000;
     background-color: #ffffff;

@@ -24,26 +24,21 @@ const ImageSlider = ( slides ) => {
     }
   };
 
-
-
     return (
-    <>
-        <p className='larger-margin'>Thanks for visiting my portfolio, enjoy these memes!</p>
+    <div className='meme-slider'>
+        <p>Thanks for visiting my portfolio, enjoy these memes!</p>
         <section className='slider'>         
             <button className='left-arrow' onClick={prevSlide}>⇐</button>
             <button className='right-arrow' onClick={nextSlide}>⇒</button>
             {Memes.map((slide, index) => {
                 return (
-                    <div
-                        className={index === current ? 'active' : 'slide'}
-                        key={index}>
-                        {index === current && (
-                        <img src={slide.meme} alt='meme' className='image' />)}
+                    <div className={index === current ? 'active' : 'slide'} key={index}>
+                        {index === current && (<img src={slide.meme} alt='meme' className='image'/>)}
                     </div>
                 );
             })}
         </section>
-    </>
+    </div>
   );
 };
 

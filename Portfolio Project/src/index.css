@@ -3,37 +3,20 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
   color: #000000;
+  background-color: #ffffff;
   text-align: center;
-
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
-.name-and-photo{
-  display: flex;
-  flex-direction: column;
 }
 
 .page {
-  margin: 50px;
-  min-width: auto;
-  max-width: 1200px;
-  background-color: #ffffff
-}
-
-body {
-  align-items: center;
-  display: flex;
-  background-color: #ffffff;
-  place-items: center;
-  width: auto;
-  height: auto;
-  display: table-cell;
-  vertical-align: middle;
-  height:100px;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: auto;
+  gap: 3vh;
+  grid-template-areas:
+    "top-bar"
+    "name-and-photo"
+    "info-boxes"
+    "meme-slider";
 }
 
 a:hover{
@@ -50,42 +33,64 @@ h2{
 
 p{
   font-size: 1.75em;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
 }
 
-.larger-margin {
-  padding: 50px;
-  margin: 20px;
-}
+@media screen and (0 < width < 850px) {
+  p {
+    font-size: 1em;
+  }
 
+  .page {
+    grid-template-areas:
+      "name-and-photo"
+      "info-boxes"
+      "meme-slider"
+      "top-bar";
+  }
+}
 
 /*-----Name and Photo component------*/
 
 .name-and-photo{
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+  grid-area: name-and-photo;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 75vw;
 }
 
 .main-image img{
-  height: auto;
-  max-width: 50%;
-  left: 5%;
+  width: 40vw;
   border-radius: 100%;
-  border: 5px solid black;
+  border: .4vw solid black;
 }
 
 .name {
-  padding-top: 50px;
-  font-size: 3em;
+  padding-top: 5vh;
+  font-size: 2.5em;
+}
+
+.top-logo{
+  display: none;
+}
+
+@media screen and (0 < width < 700px) {
+  .top-logo {
+      display: block;
+    }
+
+  .name{
+    padding-top: 0;
+  }
+
 }
 
 /*------Goals, Hobbies, Projects sections-------*/
 .goals-section, .hobbies-section, .projects-section{
-  padding: 20px;
-  float: left;
   width: 100%;
-  height: auto;
-  margin: 10%;
+  height: fit-content;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 5px 0 black, 0 6px 20px 0 black;
@@ -99,89 +104,101 @@ p{
 /*------ Containter used to layout Goals, Hobbies, and Projects-------*/
 
 .grid-container-bottom{
-  display: inline-grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(100px, auto);
-  grid-column-gap: 10%;
+  justify-self: center;
+  grid-area: info-boxes;
+  width: 65vw;
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5vw;
 }
 
 @media screen and (0 < width < 1200px) {
   .grid-container-bottom{
-    grid-template-columns: repeat(1, 1fr);
+    flex-wrap: wrap;
   }
 }
 
 /*-------Top Navigation Bar-------*/
 
-.top-bar{
-  position: fixed;
-  z-index: 1;
-  width: 83%;
-  left: 0%;
-  top: 0px;
-  height: 50px;
-  opacity: .9;
-
+.top-bar-container {
+  grid-area: top-bar;
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "nav-links . logo . contact";
 }
-header {
+
+.top-bar-container header {
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+  opacity: .9;
+  left: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  top: 0px;
-  padding: 10px 10%;
+  top: 0%;
   background-color: #ffffff;
 }
 
 .logo {
+  padding: 0px 20px;
+  grid-area: logo;
   cursor: pointer;
 }
 
 .contact {
+  position: relative;
+  right: 5%;
+  grid-area: contact;
   font-family: "Arial", sans-serif;
   font-weight: 500;
   color: #ffffff;
   text-decoration: none;
+  padding: 9px 30px;
+  background-color: rgb(12, 134, 165);
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 .nav__links {
+  grid-area: nav-links;
   list-style: none;
   display: flex;
 }
 
 .nav__links li {
-  padding: 0px 20px;
-}
-
-.contact {
-  padding: 9px 25px;
-  background-color: rgb(12, 134, 165);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s ease 0s;
+  padding: 0px 10px;
 }
 
 .contact:hover {
   background-color: rgba(12, 134, 165, 0.8);
 }
 
-@media screen and (0 < width < 800px) {
+nav ul{
+      padding-inline-start: 0px;
+}
 
-  header {
-      height: 25px;
-    }
+@media screen and (0 < width < 700px) {
   .icon {
-    width: 30px;
-    height: 30px;
+    height: 5vh;
   }
 
   .logo {
-    scale: 50%;
+    transform: scale(.8);
   }
 
   .contact {
-    scale: 70%;
+    transform : scale(.90);
+    right: 1%;
+  }
+
+  .top-bar-container header{
+    top: 90%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 
 }
@@ -189,26 +206,33 @@ header {
 /*------Meme Slider-------*/
 
 .slider {
-  padding: 50px;
-  position: relative;
-  height: auto;
-  width: auto;
-  display: flex;
+  grid-area: meme-slider;
+  padding: 3vh;
+  width: 75vw;
+  display: grid;
   justify-content: center;
-  align-items: center;
-  border:#000
-}
+  grid-template-columns: 10vw 2.5vw 50vw 2.5vw 10vw;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "left-arrow . meme . right-arrow";
+    }
 
 .image {
-  width: 1000px;
-  height: 600px;
   border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.active {
+  grid-area: meme;
+  display: grid;
+  justify-content: center;
 }
 
 .right-arrow{
-  position: absolute;
-  top: 50%;
-  right: 10%;
+  align-self: center;
+  grid-area: right-arrow;
   font-size: 3rem;
   color: #000;
   background-color: #ffffff;
@@ -219,9 +243,8 @@ header {
 }
 
 .left-arrow {
-  position: absolute;
-  top: 50%;
-  left: 10%;
+  align-self: center;
+  grid-area: left-arrow;
   font-size: 3rem;
   color: #000;
   background-color: #ffffff;
@@ -235,43 +258,13 @@ header {
   background-color: rgb(156, 184, 235);
 }
 
-@media screen and (0 < width < 1000px) {
-
-  .image {
-      width: 500px;
-      height: 300px;
-      border-radius: 10px;
-    }
-
-  .right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 15%;
+@media screen and (0 < width < 800px) {
+  .right-arrow, .left-arrow{
     font-size: 2rem;
-    color: #000;
-    background-color: #ffffff;
-    border-radius: 10px;
-    opacity: .75;
-    z-index: 1;
-    cursor: pointer;
   }
 
-  .left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    font-size: 2rem;
-    color: #000;
-    background-color: #ffffff;
-    border-radius: 10px;
-    opacity: .75;
-    z-index: 1;
-    cursor: pointer;
-  }
-
-  .left-arrow:hover,
-  .right-arrow:hover {
-    background-color: rgb(156, 184, 235);
-  }
+.slider {
+  margin-bottom: 5vh;
+}
 }
 

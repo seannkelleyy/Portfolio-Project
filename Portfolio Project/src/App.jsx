@@ -10,14 +10,14 @@ function App() {
 
   return (
     <div className='page'>
-      <div><NameInfoBar /></div>
-      <div className='name-and-photo'><NameAndPhoto /></div>
+      <NameInfoBar />
+      <NameAndPhoto />
       <div className='grid-container-bottom'>
-        <div><Goals /></div>
-        <div><Projects /></div>
-        <div><Hobbies /></div>
+        <Goals />
+        <Projects />
+        <Hobbies />
       </div>
-      <div><MemeSlider slides={Memes} /></div>
+      <MemeSlider slides={Memes} />
     </div>
   )
 }

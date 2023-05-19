@@ -1,6 +1,6 @@
 function NameAndInfoBar() {
     return (
-        <div className="top-bar">
+        <div className="top-bar-container">
             <header>
                 <a className="logo" href="/index.html"><img src="/SK.png" alt="Sean Kelley" width="75" height="75" /></a>
                 <nav>

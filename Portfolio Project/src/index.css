@@ -62,9 +62,9 @@ p{
 }
 
 .main-image img{
-  width: 40vw;
+  width: 25vw;
   border-radius: 100%;
-  border: .4vw solid black;
+  border: .2vw solid black;
 }
 
 .name {
@@ -211,7 +211,7 @@ nav ul{
   width: 75vw;
   display: grid;
   justify-content: center;
-  grid-template-columns: 10vw 2.5vw 50vw 2.5vw 10vw;
+  grid-template-columns: 5vw 0vw 50vw 0vw 5vw;
   grid-template-rows: auto;
   grid-template-areas:
     "left-arrow . meme . right-arrow";
@@ -220,7 +220,7 @@ nav ul{
 .image {
   border-radius: 10px;
   width: 100%;
-  height: auto;
+  height: 50vh;
   object-fit: contain;
 }
 
@@ -260,11 +260,19 @@ nav ul{
 
 @media screen and (0 < width < 800px) {
   .right-arrow, .left-arrow{
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
-.slider {
-  margin-bottom: 5vh;
-}
+  .slider {
+    height: 20vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .active {
+    justify-self: center;
+  }
+
 }
 

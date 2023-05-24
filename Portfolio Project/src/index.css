@@ -2,9 +2,26 @@
 
 * {
   font-family: Arial, Helvetica, sans-serif;
-  color: #000000;
-  background-color: #ffffff;
   text-align: center;
+}
+
+.dark {
+  background-color: #333;
+  color: #fff;
+
+  .top-bar-container header{
+      background-color: #515151;
+    }
+  .goals-section,
+  .hobbies-section,
+  .projects-section {
+    background-color: #515151;
+  }
+}
+
+.light {
+  background-color: #fff;
+  color: #000000;
 }
 
 .page {
@@ -17,6 +34,9 @@
     "name-and-photo"
     "info-boxes"
     "meme-slider";
+}
+a {
+  color:rgb(12, 134, 165);
 }
 
 a:hover{
@@ -51,6 +71,7 @@ p{
   }
 }
 
+
 /*-----Name and Photo component------*/
 
 .name-and-photo{
@@ -80,9 +101,13 @@ p{
   .top-logo {
       display: block;
     }
+  .main-image img {
+    width: 65vw;
+  }
 
   .name{
     padding-top: 0;
+    font-size: 2em;
   }
 
 }
@@ -91,16 +116,14 @@ p{
 .goals-section, .hobbies-section, .projects-section{
   width: 100%;
   height: fit-content;
-  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 5px 0 black, 0 6px 20px 0 black;
-  
+  background-color: #d9d9d9;
 }
 
 .goals-section:hover, .hobbies-section:hover, .projects-section:hover, img:hover{
   transform: scale(1.02);
 }
-
 /*------ Containter used to layout Goals, Hobbies, and Projects-------*/
 
 .grid-container-bottom{
@@ -123,6 +146,8 @@ p{
 
 .top-bar-container {
   grid-area: top-bar;
+  opacity: .9;
+  z-index: 10;
   display: grid;
   justify-content: center;
   grid-template-areas:
@@ -132,14 +157,12 @@ p{
 .top-bar-container header {
   position: fixed;
   width: 100vw;
-  z-index: 2;
-  opacity: .9;
   left: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   top: 0%;
-  background-color: #ffffff;
+  background-color: #c5c5c5;
 }
 
 .logo {
@@ -148,16 +171,14 @@ p{
   cursor: pointer;
 }
 
-.contact {
+.light-mode-button {
   position: relative;
   right: 5%;
   grid-area: contact;
   font-family: "Arial", sans-serif;
   font-weight: 500;
-  color: #ffffff;
+  background-color: #7a7a7a;
   text-decoration: none;
-  padding: 9px 30px;
-  background-color: rgb(12, 134, 165);
   border-radius: 50px;
   cursor: pointer;
 }
@@ -181,26 +202,26 @@ nav ul{
 }
 
 @media screen and (0 < width < 700px) {
-  .icon {
-    height: 5vh;
-  }
 
-  .logo {
-    transform: scale(.8);
-  }
+.logo {
+  transform: scale(.8);
+  padding: 0;
+}
 
-  .contact {
-    transform : scale(.90);
-    right: 1%;
-  }
-
-  .top-bar-container header{
-    top: 90%;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-
+.top-bar-container header{
+  top: 90%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.light-mode-button{
+  scale: .6;
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  font-size: 1rem;
+  text-align: center;
+}
 }
 
 /*------Meme Slider-------*/
@@ -235,7 +256,6 @@ nav ul{
   grid-area: right-arrow;
   font-size: 3rem;
   color: #000;
-  background-color: #ffffff;
   border-radius: 10px;
   opacity: .75;
   z-index: 1;
@@ -247,7 +267,6 @@ nav ul{
   grid-area: left-arrow;
   font-size: 3rem;
   color: #000;
-  background-color: #ffffff;
   border-radius: 10px;
   opacity: .75;
   z-index: 1;
@@ -260,11 +279,12 @@ nav ul{
 
 @media screen and (0 < width < 800px) {
   .right-arrow, .left-arrow{
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
-
+  
   .slider {
     height: 20vh;
+    grid-template-columns: 10vw 0vw 50vw 0vw 10vw;
     margin-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;

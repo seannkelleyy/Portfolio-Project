@@ -19,7 +19,7 @@ function App() {
       </div>
       <MemeSlider slides={Memes} />
     </div>
-  )
+  );
 }
 
 export default App;

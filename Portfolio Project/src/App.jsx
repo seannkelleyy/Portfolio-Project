@@ -1,10 +1,10 @@
-import NameInfoBar from './NameInfoBar';
-import Goals from './Goals';
-import Hobbies from './Hobbies';
+import NameInfoBar from './components/NameInfoBar';
+import Goals from './components/Goals';
+import Hobbies from './components/Hobbies';
 import Projects from './Projects';
-import NameAndPhoto from './NameAndPhoto';
-import MemeSlider from './MemeSlider';
-import Memes from './Memes'
+import NameAndPhoto from './components/NameAndPhoto';
+import MemeSlider from './components/MemeSlider';
+import Memes from './components/Memes'
 
 function App() {
 

@@ -5,7 +5,7 @@ function NameAndPhoto(){
             <img src="/SK.png" alt="Sean Kelley" width="75" height="75" />
         </div>
         <div className="name">
-            <p>Hi, I&#39;m Sean.</p>
+            <h1>Hi, I&#39;m Sean.</h1>
         </div>
         <div className="main-image">
             <img src="/Sean.jpg" alt="Sean Kelley" />

@@ -11,6 +11,8 @@ function Projects() {
                 <p>
                     <a href="https://github.com/seannkelleyy/MortgageCalculator">Mortgage Calculator</a>
                 </p>
+                <p>
+                </p>
         </div>
     );
 }

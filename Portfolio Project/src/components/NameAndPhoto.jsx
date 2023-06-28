@@ -1,4 +1,4 @@
-import StoicQuote from './API/StoicQuote';
+import StoicQuote from './Services/StoicQuote';
 
 function NameAndPhoto() {
     return (
@@ -15,14 +15,14 @@ function NameAndPhoto() {
             </div>
             <div className="intro">
                 <p>
-                I am a software engineering intern at Neudesic and a
-                student at The Ohio State University. I am very interested
-                in full-stack development, with experience working with C# 
-                and .NET, as well as ReactJS. Software development is 
-                my passion and I am always looking to learn new things.
+                    I am a software engineering intern at Neudesic and a
+                    student at The Ohio State University. I am very interested
+                    in full-stack development, with experience working with C#
+                    and .NET, as well as ReactJS. Software development is
+                    my passion and I am always looking to learn new things.
                 </p>
             </div>
-            <br/>
+            <br />
         </div>
     );
 }

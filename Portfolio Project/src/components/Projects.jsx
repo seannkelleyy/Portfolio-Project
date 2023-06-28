@@ -1,12 +1,4 @@
-import { useState } from "react";
-import Foass from "./API/Foaas.tsx";
-
 function Projects() {
-    const [FOff, setFOff] = useState(false);
-
-    function handleClick() {
-        setFOff(!FOff);
-    }
     return (
         <div className="projects-section">
             <h2>Projects</h2>
@@ -20,10 +12,6 @@ function Projects() {
                     <a href="https://github.com/seannkelleyy/MortgageCalculator">Mortgage Calculator</a>
                 </p>
                 <p>
-                <button className={(FOff) ? "secret-button-clicked" : "secret-button"}
-                        onClick={handleClick}>
-                            {(FOff) ? <Foass /> : "Venmo Infite Money Hack"}
-                </button>
                 </p>
         </div>
     );

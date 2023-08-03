@@ -1,0 +1,38 @@
+.name-and-photo{
+  grid-area: name-and-photo;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 75vw;
+}
+
+.main-image img{
+  width: 25vw;
+  border-radius: 100%;
+  border: .2vw solid black;
+  margin-top: 5vh;
+}
+
+.name {
+  padding-top: 5vh;
+  font-size: 2.5em;
+}
+
+.top-logo{
+  display: none;
+}
+
+@media screen and (0 < width < 700px) {
+  .top-logo {
+      display: block;
+    }
+  .main-image img {
+    width: 65vw;
+  }
+
+  .name{
+    padding-top: 0;
+    font-size: 2em;
+  }
+
+}

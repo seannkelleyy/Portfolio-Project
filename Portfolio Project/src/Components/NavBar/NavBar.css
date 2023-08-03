@@ -1,0 +1,75 @@
+.top-bar-container {
+  grid-area: top-bar;
+  opacity: .9;
+  z-index: 10;
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "nav-links . logo . contact";
+}
+
+.top-bar-container header {
+  position: fixed;
+  width: 100vw;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0%;
+  background-color: #c5c5c5;
+}
+
+.logo {
+  padding: 0px 20px;
+  grid-area: logo;
+  cursor: pointer;
+}
+
+.light-mode-button {
+  position: relative;
+  right: 5%;
+  grid-area: contact;
+  font-family: "Arial", sans-serif;
+  font-weight: 500;
+  background-color: #7a7a7a;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.nav__links {
+  grid-area: nav-links;
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 10px;
+}
+
+nav ul{
+      padding-inline-start: 0px;
+}
+
+@media screen and (0 < width < 700px) {
+
+  .logo {
+    transform: scale(.8);
+    padding: 0;
+  }
+
+  .top-bar-container header{
+    top: 90%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .light-mode-button{
+    scale: .6;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    font-size: 1rem;
+    text-align: center;
+  }
+}

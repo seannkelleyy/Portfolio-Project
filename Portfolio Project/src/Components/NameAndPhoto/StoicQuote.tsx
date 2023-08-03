@@ -1,5 +1,5 @@
 import React from "react";
-import { StoicQuoteService } from "../Services/StoicQuoteServices";
+import { StoicQuoteService } from "../../Services/StoicQuoteServices";
 
 export const StoicQuote = () => {
 	const quote = StoicQuoteService();

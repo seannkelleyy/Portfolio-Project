@@ -1,17 +1,17 @@
-import StoicQuote from './API/StoicQuote';
+import { StoicQuote } from '../Components/StoicQuote';
 
-function NameAndPhoto() {
+const NameAndPhoto = () => {
     return (
         <div className='name-and-photo'>
             <div className="top-logo">
-                <img src="/SK.png" alt="Sean Kelley" width="75" height="75" />
+                <img src="./src/Assets/Images/SK.png" alt="Sean Kelley" width="75" height="75" />
             </div>
             <div className="name">
                 <h1>Hi, I&#39;m Sean.</h1>
             </div>
             <StoicQuote />
             <div className="main-image">
-                <img src="/Sean.jpg" alt="Sean Kelley" />
+                <img src="./src/Assets/Images/Sean.jpg" alt="Sean Kelley" />
             </div>
             <div className="intro">
                 <p>

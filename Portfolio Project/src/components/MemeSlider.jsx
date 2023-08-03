@@ -1,56 +1,29 @@
-import { useState, useEffect } from 'react';
-import { Memes } from './Memes';
-import axios from 'axios';
+import { useState } from 'react';
+import { Memes } from '../Assets/Data/Memes';
+import { PictureService } from '../Services/PictureServices';
+import { GifService } from '../Services/GifServices';
 
 const ImageSlider = () => {
     const [currentSliderImage, setCurrentSliderImage] = useState(0);
     const [current, setCurrent] = useState(0);
-    const [photos, setPhotos] = useState(Memes);
-    const [pictures, setPictures] = useState([]);
-    const [gifs, setGifs] = useState([]);
-
-//-----------------API CALLS-----------------//
-    useEffect(() => {
-        axios.get('https://picsum.photos/v2/list?page=2&limit=10')
-            .then(({ data }) => {
-                const formattedPictures = data.slice(0, 10).map((picture) => ({
-                    image: picture.download_url,
-                }));
-                setPictures(formattedPictures);
-            })
-    }, []);
-
-    useEffect(() => {
-        axios.get('https://api.giphy.com/v1/gifs/trending', {
-            params: {
-            api_key: 'w2KURvTdH8tb1o1SgeQEariVSqfUBBeh',
-            limit: 10
-            },
-        })
-        .then(({ data }) => {
-            const formattedGifs = data.data.map((gif) => ({
-            image: gif.images.downsized_medium.url,
-            }));
-            setGifs(formattedGifs);
-        })
-    }, []);
-
-    const photoModes = [Memes, pictures, gifs]
+    const [memes, setMemes] = useState(Memes);
+    
+    const photoModes = [Memes, PictureService(), GifService()]
 
 //-----------------Slider Logic-----------------//
     
-function handleClick() { 
+const handleClick = () => { 
     if (current + 1 < photoModes.length) {
         setCurrentSliderImage(current === photoModes.length - 1 ? 0 : current + 1);
-        setPhotos(photoModes[current + 1]);
+        setMemes(photoModes[current + 1]);
         setCurrent(current + 1);
     } else {
-        setPhotos(photoModes[0]);
+        setMemes(photoModes[0]);
         setCurrent(0);
     }
 }
   const nextSlide = () => {
-    if (currentSliderImage + 1 < photos.length) {
+    if (currentSliderImage + 1 < memes.length) {
       setCurrentSliderImage(currentSliderImage + 1);
     } else {
       setCurrentSliderImage(0);
@@ -61,7 +34,7 @@ function handleClick() {
     if (currentSliderImage - 1 >= 0) {
       setCurrentSliderImage(currentSliderImage - 1);
     } else {
-      setCurrentSliderImage(photos.length - 1);
+      setCurrentSliderImage(memes.length - 1);
     }
   };
      
@@ -74,7 +47,7 @@ function handleClick() {
         <section className='slider'>         
             <button className='left-arrow' onClick={prevSlide}>⇐</button>
             <button className='right-arrow' onClick={nextSlide}>⇒</button>
-            {photos.map((photo, index) => {
+            {memes.map((photo, index) => {
                 return (
                     <div className={index === currentSliderImage ? 'active' : 'slide'} key={index}>
                         {index === currentSliderImage && (<img src={photo.image} alt='image' className='image'/>)}

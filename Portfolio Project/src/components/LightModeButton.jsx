@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function LightModeButton() {
+const LightModeButton = () => {
     const [lightMode, setLightMode] = useState(findDefaultMode);
 
     function findDefaultMode() {
@@ -19,7 +19,7 @@ function LightModeButton() {
 
     return (
         <button className="light-mode-button" onClick={toggleLightMode}>
-                    <img alt="Screen Mode"  src={(lightMode === 'light') ? "/light-mode.png" : "/dark-mode.png"} width="50" height="50"/>
+                    <img alt="Screen Mode"  src={(lightMode === 'light') ? "./src/Assets/Images/light-mode.png" : "./src/Assets/Images/dark-mode.png"} width="50" height="50"/>
             </button>
     );
 }

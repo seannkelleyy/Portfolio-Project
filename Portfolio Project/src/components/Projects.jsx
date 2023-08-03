@@ -1,18 +1,16 @@
-function Projects() {
+import { ProjectsData } from "../Assets/Data/projectsData";
+
+const Projects = () =>{
     return (
         <div className="projects-section">
             <h2>Projects</h2>
-                <p>
-                    <a href="https://github.com/seannkelleyy/Website">My first website</a>
-                </p>
-                <p>
-                    <a href="https://github.com/seannkelleyy/Portfolio-Project">This Website</a>
-                </p>
-                <p>
-                    <a href="https://github.com/seannkelleyy/MortgageCalculator">Mortgage Calculator</a>
-                </p>
-                <p>
-                </p>
+            {ProjectsData.map((project, index) => {
+                return (
+                    <p key={index}>
+                        <a href={project.link}>{project.title}</a>
+                    </p>
+                )
+            })}
         </div>
     );
 }

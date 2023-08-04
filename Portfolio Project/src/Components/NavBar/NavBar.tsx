@@ -1,6 +1,6 @@
-import "./NavBar.css";
-import React from "react";
-import LightModeButton from "./LightModeButton";
+import './NavBar.css'
+import React from 'react'
+import LightModeButton from './LightModeButton'
 
 const NavBar = () => {
 	return (
@@ -8,7 +8,8 @@ const NavBar = () => {
 			<header>
 				<a
 					className='logo'
-					href='/index.html'>
+					href='/index.html'
+				>
 					<img
 						src='./src/Assets/Images/SK.png'
 						alt='Sean Kelley'
@@ -53,7 +54,7 @@ const NavBar = () => {
 				<LightModeButton />
 			</header>
 		</div>
-	);
-};
+	)
+}
 
-export default NavBar;
+export default NavBar

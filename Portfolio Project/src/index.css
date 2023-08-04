@@ -1,39 +1,83 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  --lightModeBackground: #cfcfcf;
+  --lightModeBox1: #a3a3a3;
+  --lightModeBox2: #e6e6e6;
+  --lightModeBox3: #ffffff;
+  --darkModeBackground: #172a21;
+  --darkModeBox1: #334f48;
+  --darkModeBox2: #5d8883;
+  --darkModeBox3: #9fccc6;
+  --lightModeButton: #b9b9b9;
+  --lightModeButtonHover: #a5a5a5;
+  --darkModeButton: #7a7a7a;
+  --darkModeButtonHover: #a5a5a5;
+
+  overflow-x: hidden;
 }
 
+/*----------Dark / Light Mode ------->*/
 .dark {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--darkModeBackground);
+  color: white;
 
-  .top-bar-container header{
-      background-color: #515151;
-    }
-  .goals-section,
-  .hobbies-section,
-  .projects-section,
-  .default-container {
-    background-color: #515151;
+  .top-bar-container header {
+    background-color: var(--darkModeBox);
   }
+  
+  .name-and-photo {
+    background-color: var(--darkModeBackground);
+  }
+
+  .goals-section {
+    background-color: var(--darkModeBox1);
+  }
+
+  .projects-section {
+    background-color: var(--darkModeBox3);
+  }
+
+  .hobbies-section {
+    background-color: var(--darkModeBox2);
+  }
+
+  .default-container {
+    background-color: var(--darkModeBox2);
+  }
+
+  .image-slider-container {
+    background-color: var(--darkModeBox1);
+  }
+
+  .light-mode-button {
+    background-color: var(--darkModeButton);
+  }
+
+  .left-arrow, .right-arrow{
+    background-color: var(--darkModeButton);
+  }
+
+  .left-arrow:hover, .right-arrow:hover{
+    background-color: var(--darkModeButtonHover);
+  }
+
 }
 
 .light {
-  background-color: #fff;
+  background-color: var(--lightModeBackground);
   color: #000000;
 }
 
 .page {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  grid-template-rows: auto;
-  gap: 3vh;
-  grid-template-areas:
-    "top-bar"
-    "name-and-photo"
-    "info-boxes"
-    "meme-slider";
+  align-items: center;
+  gap: 2rem;
 }
+
+/*----------Standard HTML Elements ------->*/
 a {
   color:rgb(12, 134, 165);
 }
@@ -51,21 +95,14 @@ h2{
 }
 
 p{
+  margin: 0;
   font-size: 1.75em;
-  padding-left: 2.5vw;
-  padding-right: 2.5vw;
+
+  padding: 2.5vw;
 }
 
 @media screen and (0 < width < 850px) {
   p {
     font-size: 1em;
-  }
-
-  .page {
-    grid-template-areas:
-      "name-and-photo"
-      "info-boxes"
-      "meme-slider"
-      "top-bar";
   }
 }

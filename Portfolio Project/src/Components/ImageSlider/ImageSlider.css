@@ -1,34 +1,31 @@
-.slider {
-  grid-area: meme-slider;
-  padding: 3vh;
-  width: 75vw;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 5vw 0vw 50vw 0vw 5vw;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "left-arrow . meme . right-arrow";
-    }
-
-.image {
-  border-radius: 10px;
-  width: 100%;
-  height: 50vh;
-  object-fit: contain;
+.image-slider-container {
+  width: 100vw;
+  background-color: var(--lightModeBox1);
 }
 
-.active {
-  grid-area: meme;
-  display: grid;
+.slider {
+  background-color: var(--lightModeBox);
+  padding: 3vh;
+  display: flex;
   justify-content: center;
+  flex-direction: row;
+}
+
+.image {
+  width: 45vw;
+  height: 28vw;
+}
+
+.image-viewport {
+  padding: 2rem;
 }
 
 .right-arrow{
   align-self: center;
-  grid-area: right-arrow;
   font-size: 3rem;
-  color: #000;
-  border-radius: 10px;
+  background-color: var(--lightModeButton);
+  color: black;
+  border-radius: .75rem;
   opacity: .75;
   z-index: 1;
   cursor: pointer;
@@ -36,65 +33,80 @@
 
 .left-arrow {
   align-self: center;
-  grid-area: left-arrow;
   font-size: 3rem;
-  color: #000;
-  border-radius: 10px;
+  background-color: var(--lightModeButton);
+  color: black;
+  border-radius: .75rem;
   opacity: .75;
   z-index: 1;
   cursor: pointer;
 }
 
 .left-arrow:hover, .right-arrow:hover {
-  background-color: rgb(156, 184, 235);
+  background-color: var(--lightModeButtonHover);
 }
 
-.btn-group{
-  grid-area: buttons;
+.slider-button{
   display: flex;
   justify-content: center;
 }
-.btn-group button {
-  background-color: #7a7a7a;
-  border: 1px solid rgb(0, 0, 0);
-  color: white;
-  padding: 10px 24px;
+
+.slider-button button {
+  border: 2px dashed rgb(0, 0, 0);
+  background-color: transparent;
+  border-radius: .5rem;
+  font-weight: bolder;
+  color: rgb(212, 209, 176);
+  padding: .75rem 1.5rem;
   cursor: pointer;
   float: left;
 }
 
-.btn-group button:not(:last-child) {
-  border-right: none;
-}
 
 
-.btn-group:after {
+
+.slider-button:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.btn-group button:hover {
-  background-color: #a5a5a5;
+.slider-button button:hover {
+  border: 2px solid rgb(0, 0, 0);
+
 }
 
 
 @media screen and (0 < width < 800px) {
   .right-arrow, .left-arrow{
-    font-size: 2rem;
+    position: absolute;
+    top: 0%;
+    z-index: 10;
+    width:50%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .left-arrow {
+    left: 0;
+  }
+
+  .right-arrow {
+    right: 0;
   }
   
   .slider {
-    align-content: center;
-    height: 15vh;
-    grid-template-columns: 10vw 0vw 50vw 0vw 10vw;
-    margin-top: 5vh;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    padding-top: 1rem;
   }
 
-  .active {
-    justify-self: center;
+  .image-viewport {
+    padding: 0;  
+  }
+
+  .image{
+    width: 100%;
+    height: 25vh;
   }
 
 }

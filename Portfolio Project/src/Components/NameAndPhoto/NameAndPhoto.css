@@ -1,16 +1,16 @@
 .name-and-photo{
-  grid-area: name-and-photo;
-  margin-left: auto;
-  margin-right: auto;
+  background: var(--lightModeBackground);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 75vw;
+  height: 100vh;
 }
 
 .main-image img{
   width: 25vw;
   border-radius: 100%;
   border: .2vw solid black;
-  margin-top: 5vh;
 }
 
 .name {
@@ -18,20 +18,13 @@
   font-size: 2.5em;
 }
 
-.top-logo{
-  display: none;
-}
-
 @media screen and (0 < width < 700px) {
-  .top-logo {
-      display: block;
-    }
   .main-image img {
     width: 65vw;
   }
 
   .name{
-    padding-top: 0;
+    padding-top: 8vh;
     font-size: 2em;
   }
 

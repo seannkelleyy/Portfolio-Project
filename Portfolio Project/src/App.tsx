@@ -1,24 +1,26 @@
-import NameInfoBar from "./Components/NavBar/NavBar";
-import Goals from "./Components/GoalsProjectsHobbies/Goals";
-import Hobbies from "./Components/GoalsProjectsHobbies/Hobbies";
-import Projects from "./Components/GoalsProjectsHobbies/Projects";
-import NameAndPhoto from "./Components/NameAndPhoto/NameAndPhoto";
-import ImageSlider from "./Components/ImageSlider/ImageSlider";
-import React from "react";
+import Goals from './Components/GoalsProjectsHobbies/Goals'
+import Hobbies from './Components/GoalsProjectsHobbies/Hobbies'
+import Projects from './Components/GoalsProjectsHobbies/Projects'
+import NameAndPhoto from './Components/NameAndPhoto/NameAndPhoto'
+import ImageSlider from './Components/ImageSlider/ImageSlider'
+import React from 'react'
+import NavBar from './Components/NavBar/NavBar'
+import { StoicQuote } from './Components/GoalsProjectsHobbies/StoicQuote'
 
 const App = () => {
 	return (
-		<div className='page'>
-			<NameInfoBar />
+		<>
+			<NavBar />
 			<NameAndPhoto />
-			<div className='grid-container-bottom'>
+			<div className='page'>
+				<StoicQuote />
 				<Goals />
 				<Projects />
 				<Hobbies />
+				<ImageSlider />
 			</div>
-			<ImageSlider />
-		</div>
-	);
-};
+		</>
+	)
+}
 
-export default App;
+export default App

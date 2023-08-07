@@ -1,5 +1,5 @@
-import './GoalsProjectsHobbies.css'
-import { GoalsData } from '../../Assets/Data/GoalsData'
+import './InfoSections.css'
+import { GoalsData } from '../../assets/data/GoalsData'
 import React from 'react'
 
 const Goals = () => {

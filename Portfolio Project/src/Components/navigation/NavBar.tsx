@@ -1,4 +1,4 @@
-import './NavBar.css'
+import './Navigation.css'
 import React from 'react'
 import LightModeButton from './LightModeButton'
 

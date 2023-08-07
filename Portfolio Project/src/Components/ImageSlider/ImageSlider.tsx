@@ -1,8 +1,8 @@
 import './ImageSlider.css'
 import { useState } from 'react'
-import { Memes } from '../../Assets/Data/Memes'
-import { PictureService } from '../../Services/PictureServices'
-import { GifService } from '../../Services/GifServices'
+import { Memes } from '../../assets/data/Memes'
+import { PictureService } from '../../services/PictureServices'
+import { GifService } from '../../services/GifServices'
 import React from 'react'
 
 const ImageSlider = () => {

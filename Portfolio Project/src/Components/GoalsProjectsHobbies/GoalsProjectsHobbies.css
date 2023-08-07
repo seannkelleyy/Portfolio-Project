@@ -1,0 +1,8 @@
+.goals-section, .hobbies-section, .projects-section, .default-container{
+  padding: .5vw;
+  width: 100vw;
+}
+
+.default-container{
+  background-color: black;
+}

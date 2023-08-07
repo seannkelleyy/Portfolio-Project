@@ -1,0 +1,101 @@
+.image-slider-container {
+  width: 100vw;
+  background-color: var(--lightModeBox1);
+}
+
+.slider {
+  background-color: var(--lightModeBox);
+  padding: 3vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.image {
+  width: 45vw;
+  height: 28vw;
+}
+
+.image-viewport {
+  padding: 2rem;
+}
+
+.right-arrow, .left-arrow{
+  align-self: center;
+  font-size: 3rem;
+  background-color: transparent;
+  border: 2px dashed rgb(0, 0, 0);
+  color: rgb(212, 209, 176);
+  border-radius: .75rem;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+  border-style: solid;
+}
+
+.slider-button{
+  display: flex;
+  justify-content: center;
+}
+
+.slider-button button {
+  border: 2px dashed rgb(0, 0, 0);
+  background-color: transparent;
+  border-radius: .5rem;
+  font-weight: bolder;
+  color: rgb(212, 209, 176);
+  padding: .75rem 1.5rem;
+  cursor: pointer;
+  float: left;
+}
+
+
+
+
+.slider-button:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.slider-button button:hover {
+  border: 2px solid rgb(0, 0, 0);
+
+}
+
+
+@media screen and (0 < width < 800px) {
+  .right-arrow, .left-arrow{
+    position: absolute;
+    top: 0%;
+    z-index: 10;
+    width:50%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .left-arrow {
+    left: 0;
+  }
+
+  .right-arrow {
+    right: 0;
+  }
+  
+  .slider {
+    position: relative;
+    padding-top: 1rem;
+  }
+
+  .image-viewport {
+    padding: 0;  
+  }
+
+  .image{
+    width: 100%;
+    height: 25vh;
+  }
+
+}

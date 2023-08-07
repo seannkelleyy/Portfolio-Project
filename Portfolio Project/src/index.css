@@ -55,11 +55,9 @@
   }
 
   .left-arrow, .right-arrow{
-    background-color: var(--darkModeButton);
   }
 
   .left-arrow:hover, .right-arrow:hover{
-    background-color: var(--darkModeButtonHover);
   }
 
 }

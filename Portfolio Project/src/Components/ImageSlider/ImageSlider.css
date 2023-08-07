@@ -20,30 +20,19 @@
   padding: 2rem;
 }
 
-.right-arrow{
+.right-arrow, .left-arrow{
   align-self: center;
   font-size: 3rem;
-  background-color: var(--lightModeButton);
-  color: black;
+  background-color: transparent;
+  border: 2px dashed rgb(0, 0, 0);
+  color: rgb(212, 209, 176);
   border-radius: .75rem;
-  opacity: .75;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.left-arrow {
-  align-self: center;
-  font-size: 3rem;
-  background-color: var(--lightModeButton);
-  color: black;
-  border-radius: .75rem;
-  opacity: .75;
   z-index: 1;
   cursor: pointer;
 }
 
 .left-arrow:hover, .right-arrow:hover {
-  background-color: var(--lightModeButtonHover);
+  border-style: solid;
 }
 
 .slider-button{

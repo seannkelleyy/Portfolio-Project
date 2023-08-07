@@ -3,7 +3,10 @@ import React from 'react'
 
 const NameAndPhoto = () => {
 	return (
-		<section className='name-and-photo'>
+		<section
+			id='name-and-photo'
+			className='name-and-photo'
+		>
 			<div className='name'>
 				<h1>Hi, I&#39;m Sean.</h1>
 			</div>

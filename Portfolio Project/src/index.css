@@ -38,7 +38,7 @@
     background-color: var(--darkModeBox3);
   }
 
-  .hobbies-section {
+  .resume-section {
     background-color: var(--darkModeBox2);
   }
 
@@ -53,13 +53,6 @@
   .light-mode-button {
     background-color: var(--darkModeButton);
   }
-
-  .left-arrow, .right-arrow{
-  }
-
-  .left-arrow:hover, .right-arrow:hover{
-  }
-
 }
 
 .light {
@@ -73,6 +66,41 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+.standard-button{
+  display: flex;
+  justify-content: center;
+}
+
+.standard-button button {
+  border: 2px dashed rgb(0, 0, 0);
+  background-color: transparent;
+  border-radius: .5rem;
+  font-weight: bolder;
+  color: rgb(212, 209, 176);
+  padding: .75rem 1.5rem;
+  cursor: pointer;
+  float: left;
+}
+
+.standard-button:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.standard-button button:hover {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.standard-button a{
+  text-decoration: none;
+  color: rgb(212, 209, 176);
+}
+
+.standard-button a:hover{
+  color: rgb(212, 209, 176);
 }
 
 /*----------Standard HTML Elements ------->*/

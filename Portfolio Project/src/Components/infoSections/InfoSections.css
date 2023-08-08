@@ -1,8 +1,25 @@
-.goals-section, .hobbies-section, .projects-section, .default-container{
+.goals-section, .resume-section, .projects-section, .default-container{
   padding: .5vw;
   width: 100vw;
+  height: auto;
+}
+
+.resume-section {
+  height: 50vh;
 }
 
 .default-container{
   background-color: black;
+}
+
+.project-image {
+  height: auto;
+  width: 20vw;
+  border-radius: .5rem;
+  border: .0625rem black solid;
+}
+
+.projects-images-section {
+  display: flex;
+  justify-content: space-evenly;
 }

@@ -1,5 +1,5 @@
 import Goals from './components/infoSections/Goals'
-import Hobbies from './components/infoSections/Hobbies'
+import Resume from './components/infoSections/Resume'
 import Projects from './components/infoSections/Projects'
 import NameAndPhoto from './components/aboutMe/AboutMe'
 import ImageSlider from './components/ImageSlider/ImageSlider'
@@ -18,7 +18,7 @@ const App = () => {
 				<StoicQuote />
 				<Goals />
 				<Projects />
-				<Hobbies />
+				<Resume />
 				<ImageSlider />
 			</div>
 		</>

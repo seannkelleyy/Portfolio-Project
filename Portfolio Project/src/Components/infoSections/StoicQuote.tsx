@@ -5,7 +5,7 @@ export const StoicQuote = () => {
 	const quote = StoicQuoteService()
 	return (
 		<div className='default-container'>
-			<h3>Food for thought</h3>
+			<h2>Food for thought</h2>
 			{quote ? (
 				<p>
 					{quote.quote} <br />

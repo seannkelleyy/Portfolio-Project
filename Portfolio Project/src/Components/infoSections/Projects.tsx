@@ -6,18 +6,22 @@ const Projects = () => {
 	return (
 		<div className='projects-section'>
 			<h2>Projects</h2>
-			{ProjectsData.map((project, index) => {
-				return (
-					<p key={index}>
-						<a href={project.link}>
-							<img
-								src={project.image}
-								alt={project.title}
-							/>
-						</a>
-					</p>
-				)
-			})}
+			<div className='projects-images-section'>
+				{ProjectsData.map((project, index) => {
+					return (
+						<p key={index}>
+							<a href={project.link}>
+								<img
+									src={project.image}
+									alt={project.title}
+									className='project-image'
+								/>
+								<figcaption>{project.title}</figcaption>
+							</a>
+						</p>
+					)
+				})}
+			</div>
 		</div>
 	)
 }

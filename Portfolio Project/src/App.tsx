@@ -1,12 +1,12 @@
-import Goals from './Components/GoalsProjectsHobbies/Goals'
-import Hobbies from './Components/GoalsProjectsHobbies/Hobbies'
-import Projects from './Components/GoalsProjectsHobbies/Projects'
-import NameAndPhoto from './Components/NameAndPhoto/NameAndPhoto'
-import ImageSlider from './Components/ImageSlider/ImageSlider'
-import { SideBar } from './components/NavBar/sideBar'
+import Goals from './components/infoSections/Goals'
+import Hobbies from './components/infoSections/Hobbies'
+import Projects from './components/infoSections/Projects'
+import NameAndPhoto from './components/aboutMe/AboutMe'
+import ImageSlider from './components/ImageSlider/ImageSlider'
+import { SideBar } from './components/navigation/sideBar'
 import React from 'react'
-import NavBar from './Components/NavBar/NavBar'
-import { StoicQuote } from './Components/GoalsProjectsHobbies/StoicQuote'
+import NavBar from './components/navigation/NavBar'
+import { StoicQuote } from './components/infoSections/StoicQuote'
 
 const App = () => {
 	return (

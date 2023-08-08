@@ -43,7 +43,7 @@ const ImageSlider = () => {
 	return (
 		<div className='image-slider-container'>
 			<p>Thanks for visiting my portfolio, enjoy these memes/photos!</p>
-			<div className='slider-button'>
+			<div className='standard-button'>
 				<button onClick={handleClick}>{current === 0 ? 'Seans Memes' : current === 1 ? 'Pretty Photos' : 'Trending Gifs'}</button>
 			</div>
 			<section className='slider'>

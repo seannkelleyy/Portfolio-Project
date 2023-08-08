@@ -35,38 +35,7 @@
   border-style: solid;
 }
 
-.slider-button{
-  display: flex;
-  justify-content: center;
-}
-
-.slider-button button {
-  border: 2px dashed rgb(0, 0, 0);
-  background-color: transparent;
-  border-radius: .5rem;
-  font-weight: bolder;
-  color: rgb(212, 209, 176);
-  padding: .75rem 1.5rem;
-  cursor: pointer;
-  float: left;
-}
-
-
-
-
-.slider-button:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.slider-button button:hover {
-  border: 2px solid rgb(0, 0, 0);
-
-}
-
-
-@media screen and (0 < width < 800px) {
+@media screen and (0 < width < 850px) {
   .right-arrow, .left-arrow{
     position: absolute;
     top: 0%;

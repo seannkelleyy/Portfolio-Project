@@ -1,8 +1,47 @@
-.goals-section, .hobbies-section, .projects-section, .default-container{
+.goals-section, .resume-section, .projects-section, .quote-section{
   padding: .5vw;
   width: 100vw;
 }
 
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-section p{
+  padding: .0625rem;
+  font-size: 1rem;
+}
+
+.resume-section {
+  height: auto;
+  width: auto;
+}
+
 .default-container{
   background-color: black;
+}
+
+.project-image {
+  height: auto;
+  width: 20vw;
+  border-radius: .5rem;
+  border: .0625rem black solid;
+}
+
+.projects-images-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (0 < width < 850px) {
+  .project-image {
+    width: 90vw;
+  }
+  .projects-images-section {
+    flex-wrap: wrap;
+  }
 }

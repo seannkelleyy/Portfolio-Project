@@ -28,7 +28,7 @@ const LightModeButton = () => {
 		>
 			<img
 				alt='Screen Mode'
-				src={lightMode === 'light' ? './src/Assets/Images/light-mode.png' : './src/Assets/Images/dark-mode.png'}
+				src={lightMode === 'light' ? './src/Assets/Images/lightMode.svg' : './src/Assets/Images/darkMode.png'}
 				width='50'
 				height='50'
 			/>

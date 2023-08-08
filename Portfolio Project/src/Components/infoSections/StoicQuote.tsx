@@ -4,8 +4,8 @@ import { StoicQuoteService } from '../../services/StoicQuoteServices'
 export const StoicQuote = () => {
 	const quote = StoicQuoteService()
 	return (
-		<div className='default-container'>
-			<h3>Food for thought</h3>
+		<div className='quote-section'>
+			<h2>Food for thought</h2>
 			{quote ? (
 				<p>
 					{quote.quote} <br />

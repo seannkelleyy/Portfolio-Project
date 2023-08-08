@@ -9,7 +9,12 @@ const Projects = () => {
 			{ProjectsData.map((project, index) => {
 				return (
 					<p key={index}>
-						<a href={project.link}>{project.title}</a>
+						<a href={project.link}>
+							<img
+								src={project.image}
+								alt={project.title}
+							/>
+						</a>
 					</p>
 				)
 			})}

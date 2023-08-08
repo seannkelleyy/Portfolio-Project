@@ -24,10 +24,11 @@
   right: 5%;
   font-family: "Arial", sans-serif;
   font-weight: 500;
-  background-color: var(--lightModeButton);
   text-decoration: none;
   border-radius: 50px;
   cursor: pointer;
+  background-color: transparent ;
+  border: 1px solid black;
 }
 
 .nav__links {
@@ -71,14 +72,20 @@ nav ul{
     width: 0.75rem;
     background-color: transparent;
     border: 1px solid #d1d5db;
-
 }
 
+.side-link:hover {
+    background-color: #d1d5db;
+}
 .side-link--active {
     background-color: #d1d5db;
 }
 
-@media screen and (0 < width < 700px) {
+.logo {
+    filter: invert(0%);
+}
+
+@media screen and (0 < width < 850px) {
 
   .logo {
     transform: scale(.8);

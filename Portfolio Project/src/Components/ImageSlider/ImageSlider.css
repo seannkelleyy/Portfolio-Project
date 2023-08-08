@@ -35,7 +35,7 @@
   border-style: solid;
 }
 
-@media screen and (0 < width < 800px) {
+@media screen and (0 < width < 850px) {
   .right-arrow, .left-arrow{
     position: absolute;
     top: 0%;

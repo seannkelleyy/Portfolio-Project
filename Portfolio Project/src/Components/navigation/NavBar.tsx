@@ -22,8 +22,9 @@ const NavBar = () => {
 						<li>
 							<a href='https://github.com/seannkelleyy'>
 								<img
+									className='logo'
 									alt='Github'
-									src='./src/Assets/Images/github.jpg'
+									src='./src/Assets/Images/githubWhite.svg'
 									width='50'
 									height='50'
 								/>
@@ -32,8 +33,9 @@ const NavBar = () => {
 						<li>
 							<a href='https://www.linkedin.com/in/seankelley15/'>
 								<img
+									className='logo'
 									alt='Linkedin'
-									src='./src/Assets/Images/linkedin.jpg'
+									src='./src/Assets/Images/linkedIn.svg'
 									width='50'
 									height='50'
 								/>
@@ -42,6 +44,7 @@ const NavBar = () => {
 						<li>
 							<a href='mailto:seannkelleyy1@gmail.com'>
 								<img
+									className='logo'
 									alt='Email'
 									src='./src/Assets/Images/email.png'
 									width='50'

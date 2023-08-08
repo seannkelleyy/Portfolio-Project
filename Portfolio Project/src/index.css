@@ -5,7 +5,7 @@
   --lightModeBox1: #a3a3a3;
   --lightModeBox2: #e6e6e6;
   --lightModeBox3: #ffffff;
-  --darkModeBackground: #172a21;
+  --darkModeBackground: #171f2a;
   --darkModeBox1: #334f48;
   --darkModeBox2: #5d8883;
   --darkModeBox3: #9fccc6;
@@ -30,6 +30,10 @@
     background-color: var(--darkModeBackground);
   }
 
+  .quote-section {
+    background-color: var(--darkModeBox3);
+  }
+
   .goals-section {
     background-color: var(--darkModeBox1);
   }
@@ -51,7 +55,11 @@
   }
 
   .light-mode-button {
-    background-color: var(--darkModeButton);
+       filter: invert(0%);
+
+  }
+  .logo {
+    filter: invert(100%);
   }
 }
 

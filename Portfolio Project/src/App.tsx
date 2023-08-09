@@ -12,8 +12,10 @@ import { Contact } from './components/infoSections/contact'
 const App = () => {
 	return (
 		<>
-			<NavBar />
-			<SideBar />
+			<header>
+				<NavBar />
+				<SideBar />
+			</header>
 			<NameAndPhoto />
 			<div className='page'>
 				<StoicQuote />
@@ -21,7 +23,9 @@ const App = () => {
 				<Projects />
 				<Resume />
 				<ImageSlider />
-				<Contact />
+				<footer>
+					<Contact />
+				</footer>
 			</div>
 		</>
 	)

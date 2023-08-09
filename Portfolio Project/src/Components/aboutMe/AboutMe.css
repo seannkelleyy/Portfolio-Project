@@ -18,6 +18,10 @@
   font-size: 2.5em;
 }
 
+.intro {
+  width: 125ch;
+}
+
 @media screen and (0 < width < 700px) {
   .main-image img {
     width: 65vw;
@@ -26,6 +30,10 @@
   .name{
     padding-top: 8vh;
     font-size: 2em;
+  }
+
+  .intro {
+    width: 90vw;
   }
 
 }

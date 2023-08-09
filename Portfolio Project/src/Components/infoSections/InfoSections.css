@@ -1,6 +1,7 @@
-.goals-section, .resume-section, .projects-section, .quote-section{
+ .resume-section, .projects-section {
   padding: .5vw;
   width: 100vw;
+  border-radius: .5rem;
 }
 
 .contact-section {
@@ -19,10 +20,6 @@
 .resume-section {
   height: auto;
   width: auto;
-}
-
-.default-container{
-  background-color: black;
 }
 
 .project-image {

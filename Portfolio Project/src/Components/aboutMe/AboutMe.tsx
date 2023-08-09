@@ -3,8 +3,8 @@ import React from 'react'
 
 const NameAndPhoto = () => {
 	return (
-		<section
-			id='name-and-photo'
+		<article
+			id='about-me'
 			className='name-and-photo'
 		>
 			<div className='name'>
@@ -23,7 +23,7 @@ const NameAndPhoto = () => {
 				</p>
 			</div>
 			<br />
-		</section>
+		</article>
 	)
 }
 

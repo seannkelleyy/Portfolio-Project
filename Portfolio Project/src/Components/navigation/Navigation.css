@@ -1,43 +1,64 @@
 .top-bar-container {
   z-index: 10;
-}
-
-.top-bar-container header {
   -webkit-backdrop-filter: brightness(.6) blur(12px) opacity(1);
   backdrop-filter: brightness(.6) blur(12px) opacity(1);
   position: fixed;
-  width: 100vw;
-  left: 0px;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+}
+
+.top-bar-container header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: 0%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 20%;
+  overflow: hidden;
+}
+
+.nav-link-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.screen-mode-button-box {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 20%;
+  overflow: hidden;
 }
 
 .logo {
   padding: 0 1.2rem;
   cursor: pointer;
+  filter: invert(0%);
 }
 
 .light-mode-button {
-  position: relative;
-  right: 5%;
-  font-family: "Arial", sans-serif;
-  font-weight: 500;
-  text-decoration: none;
   border-radius: 50px;
   cursor: pointer;
-  background-color: transparent ;
-  border: 1px solid black;
+  padding: 1.2rem;
+  background-color: transparent;
+  border: none;
 }
 
-.nav__links {
+.nav-links {
   list-style: none;
   display: flex;
-}
-
-.nav__links li {
-  padding: 0 .75rem;
 }
 
 nav ul{
@@ -49,15 +70,14 @@ nav ul{
   display: flex; 
   flex-direction: column;
   justify-content: space-evenly;
-  height: 15vh;
+  height: auto;
+  gap: 1rem;
   -webkit-backdrop-filter: brightness(.6) blur(12px) opacity(1);
   backdrop-filter: brightness(.6) blur(12px) opacity(1);
   border-radius: 1rem;
   top: 40%;
   left: 1.5rem;
-  list-style-type: none;
-  margin: 0;
-  padding: .5rem;
+  padding: 1rem;
 }
 
 .side-bar a {
@@ -66,23 +86,8 @@ nav ul{
   width: 100%;
 }
 
-.side-link {
-    border-radius: 0.5rem;
-    height: 0.75rem;
-    width: 0.75rem;
-    background-color: transparent;
-    border: 1px solid #d1d5db;
-}
-
-.side-link:hover {
-    background-color: #d1d5db;
-}
-.side-link--active {
-    background-color: #d1d5db;
-}
-
-.logo {
-    filter: invert(0%);
+.side-bar a:hover, .logo:hover, .light-mode-button:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (0 < width < 850px) {
@@ -95,13 +100,5 @@ nav ul{
   .side-bar {
     display: none;
   }
-  
-  .light-mode-button{
-    scale: .6;
-    border-radius: 100%;
-    width: 90px;
-    height: 90px;
-    font-size: 1rem;
-    text-align: center;
-  }
+
 }

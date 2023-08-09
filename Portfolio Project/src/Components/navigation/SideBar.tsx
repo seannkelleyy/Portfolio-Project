@@ -6,21 +6,31 @@ export const SideBar = () => {
 			id='side-bar'
 			className='side-bar'
 		>
-			<div className='side-link'>
-				<a href='#name-and-photo' />
-			</div>
-			<div className='side-link'>
-				<a href='#goals'></a>
-			</div>
-			<div className='side-link'>
-				<a href='#projects'></a>
-			</div>
-			<div className='side-link'>
-				<a href='#hobbies'></a>
-			</div>
-			<div className='side-link'>
-				<a href='image-slider'></a>
-			</div>
+			<a href='#about-me'>
+				<img
+					src='./src/assets/images/personIcon.png'
+					alt='image icon'
+				/>
+			</a>
+			<a href='#projects'>
+				<img
+					src='./src/assets/images/projectsIcon.png'
+					alt='image icon'
+				/>
+			</a>
+			<a href='#resume'>
+				<img
+					src='./src/assets/images/resumeIcon.png'
+					alt='image icon'
+				/>
+			</a>
+
+			<a href='#image-slider'>
+				<img
+					src='./src/assets/images/imageIcon.png'
+					alt='image icon'
+				/>
+			</a>
 		</div>
 	)
 }

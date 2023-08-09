@@ -30,14 +30,6 @@
     background-color: var(--darkModeBackground);
   }
 
-  .quote-section {
-    background-color: var(--darkModeBox3);
-  }
-
-  .goals-section {
-    background-color: var(--darkModeBox1);
-  }
-
   .projects-section {
     background-color: var(--darkModeBox3);
   }
@@ -55,10 +47,10 @@
   }
 
   .light-mode-button {
-       filter: invert(0%);
-
+    filter: invert(0%);
   }
-  .logo {
+
+  .side-bar a, .logo {
     filter: invert(100%);
   }
 }

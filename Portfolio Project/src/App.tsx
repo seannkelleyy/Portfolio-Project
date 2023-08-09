@@ -1,8 +1,7 @@
 import React from 'react'
 import NavBar from './components/navigation/NavBar'
 import { SideBar } from './components/navigation/sideBar'
-import NameAndPhoto from './components/aboutMe/AboutMe'
-import { StoicQuote } from './components/infoSections/StoicQuote'
+import AboutMe from './components/aboutMe/AboutMe'
 import Goals from './components/infoSections/Goals'
 import Projects from './components/infoSections/Projects'
 import Resume from './components/infoSections/Resume'
@@ -16,10 +15,8 @@ const App = () => {
 				<NavBar />
 				<SideBar />
 			</header>
-			<NameAndPhoto />
+			<AboutMe />
 			<div className='page'>
-				<StoicQuote />
-				<Goals />
 				<Projects />
 				<Resume />
 				<ImageSlider />

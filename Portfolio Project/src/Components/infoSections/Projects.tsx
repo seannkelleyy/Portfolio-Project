@@ -4,9 +4,12 @@ import React from 'react'
 
 const Projects = () => {
 	return (
-		<div className='projects-section'>
+		<article
+			id='projects'
+			className='projects-section'
+		>
 			<h2>Projects</h2>
-			<div className='projects-images-section'>
+			<section className='projects-images-section'>
 				{ProjectsData.map((project, index) => {
 					return (
 						<p key={index}>
@@ -21,8 +24,8 @@ const Projects = () => {
 						</p>
 					)
 				})}
-			</div>
-		</div>
+			</section>
+		</article>
 	)
 }
 

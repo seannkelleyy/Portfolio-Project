@@ -4,21 +4,23 @@ import LightModeButton from './LightModeButton'
 
 const NavBar = () => {
 	return (
-		<div className='top-bar-container'>
+		<article className='top-bar-container'>
 			<header>
-				<a
-					className='logo'
-					href='/index.html'
-				>
-					<img
-						src='./src/Assets/Images/SK.png'
-						alt='Sean Kelley'
-						width='75'
-						height='75'
-					/>
-				</a>
-				<nav>
-					<ul className='nav__links'>
+				<div className='logo-box'>
+					<a
+						className='logo'
+						href='/index.html'
+					>
+						<img
+							src='./src/Assets/Images/SK.png'
+							alt='Sean Kelley'
+							width='50'
+							height='50'
+						/>
+					</a>
+				</div>
+				<nav className='nav-link-box'>
+					<ul className='nav-links'>
 						<li>
 							<a href='https://github.com/seannkelleyy'>
 								<img
@@ -54,9 +56,11 @@ const NavBar = () => {
 						</li>
 					</ul>
 				</nav>
-				<LightModeButton />
+				<div className='screen-mode-button-box'>
+					<LightModeButton />
+				</div>
 			</header>
-		</div>
+		</article>
 	)
 }
 

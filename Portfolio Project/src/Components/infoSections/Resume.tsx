@@ -3,9 +3,12 @@ import React from 'react'
 
 const Resume = () => {
 	return (
-		<div className='resume-section'>
+		<article
+			id='resume'
+			className='resume-section'
+		>
 			<h2>Resume</h2>
-			<div className='resume'>
+			<section className='resume'>
 				<img
 					src='./src/assets/images/seansResume.png'
 					alt='Seans Resume'
@@ -13,11 +16,11 @@ const Resume = () => {
 				/>
 				<div className='standard-button'>
 					<button>
-						<a href='./src/assets/resumeSean Kelley Resume 2023.pdf'>Download</a>
+						<a href='./src/assets/resume/Sean Kelley Resume 2023.pdf'>Download</a>
 					</button>
 				</div>
-			</div>
-		</div>
+			</section>
+		</article>
 	)
 }
 

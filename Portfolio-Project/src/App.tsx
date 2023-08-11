@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from './components/navigation/NavBar'
-import SideBar from './components/navigation/sideBar'
+import SideBar from './components/navigation/SideBar'
 import AboutMe from './components/aboutMe/AboutMe'
 import Projects from './components/infoSections/Projects'
 import Resume from './components/infoSections/Resume'

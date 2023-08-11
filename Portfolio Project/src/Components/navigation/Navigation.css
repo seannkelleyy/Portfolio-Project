@@ -90,7 +90,7 @@ nav ul{
   transform: scale(1.1);
 }
 
-@media screen and (0 < width < 850px) {
+@media screen and (0 < width < 900px) {
 
   .logo {
     transform: scale(.8);

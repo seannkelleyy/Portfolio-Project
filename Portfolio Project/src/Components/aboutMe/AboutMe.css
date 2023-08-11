@@ -8,7 +8,7 @@
 }
 
 .main-image img{
-  width: 25vw;
+  width: 25%;
   border-radius: 100%;
   border: .2vw solid black;
 }
@@ -16,13 +16,21 @@
 .name {
   padding-top: 5vh;
   font-size: 2.5em;
+  overflow: hidden;
 }
 
 .intro {
   width: 125ch;
+  overflow: hidden;
 }
 
-@media screen and (0 < width < 700px) {
+@media screen and (height < 1100px) {
+  .name-and-photo{
+    height: auto;
+  }
+}
+
+@media screen and (0 < width < 900px) {
   .main-image img {
     width: 65vw;
   }

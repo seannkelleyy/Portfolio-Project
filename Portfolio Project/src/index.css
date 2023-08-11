@@ -1,19 +1,16 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Calibri, sans-serif;
   text-align: center;
   --lightModeBackground: #cfcfcf;
-  --lightModeBox1: #a3a3a3;
-  --lightModeBox2: #e6e6e6;
-  --lightModeBox3: #ffffff;
-  --darkModeBackground: #171f2a;
-  --darkModeBox1: #334f48;
-  --darkModeBox2: #5d8883;
-  --darkModeBox3: #9fccc6;
-  --lightModeButton: #b9b9b9;
-  --lightModeButtonHover: #a5a5a5;
-  --darkModeButton: #7a7a7a;
-  --darkModeButtonHover: #a5a5a5;
-
+  --lightModeBox1: #949494;
+  --lightModeBox2: #9a9a9a;
+  --lightModeBox3: #949494;
+  --darkModeBackground: #111113;
+  --darkModeBox1: #1d2544;
+  --darkModeBox2: #1a372a;
+  --darkModeBox3: #32213e;
+  --buttonLight: black;
+  --buttonDark: white;
   overflow-x: hidden;
 }
 
@@ -31,19 +28,15 @@
   }
 
   .projects-section {
-    background-color: var(--darkModeBox3);
+    background-color: var(--darkModeBox1);
   }
 
   .resume-section {
-    background-color: var(--darkModeBox2);
-  }
-
-  .default-container {
-    background-color: var(--darkModeBox2);
+    background-color: var(--darkModeBox3);
   }
 
   .image-slider-container {
-    background-color: var(--darkModeBox1);
+    background-color: var(--darkModeBox2);
   }
 
   .light-mode-button {
@@ -53,11 +46,19 @@
   .side-bar a, .logo {
     filter: invert(100%);
   }
+
+  .standard-button {
+    color: var(--buttonDark);
+  }
+
+  .link {
+    color: var(--buttonDark);
+  }
 }
 
 .light {
   background-color: var(--lightModeBackground);
-  color: #000000;
+  color: black;
 }
 
 .page {
@@ -68,45 +69,37 @@
   gap: 2rem;
 }
 
-.standard-button{
-  display: flex;
-  justify-content: center;
-}
-
-.standard-button button {
-  border: 2px dashed rgb(0, 0, 0);
+.standard-button {
+  margin: auto;
+  border: 2px dashed black;
   background-color: transparent;
   border-radius: .5rem;
   font-weight: bolder;
-  color: rgb(212, 209, 176);
+  font-size: 1rem;
+  color: var(--button);
   padding: .75rem 1.5rem;
   cursor: pointer;
   float: left;
-}
-
-.standard-button:after {
-  content: "";
-  clear: both;
-  display: table;
-}
+}s
 
 .standard-button button:hover {
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid black;
 }
 
 .standard-button a{
   text-decoration: none;
-  color: rgb(212, 209, 176);
+  color: var(--button);
 }
 
 .standard-button a:hover{
-  color: rgb(212, 209, 176);
+  color: var(--button);
 }
 
-/*----------Standard HTML Elements ------->*/
-a {
-  color:rgb(12, 134, 165);
+.link {
+  text-decoration: none;
+  color: var(--buttonLight);
 }
+/*----------Standard HTML Elements ------->*/
 
 a:hover{
   color: blue;
@@ -127,7 +120,7 @@ p{
   padding: 2.5vw;
 }
 
-@media screen and (0 < width < 850px) {
+@media screen and (0 < width < 900px) {
   p {
     font-size: 1em;
   }

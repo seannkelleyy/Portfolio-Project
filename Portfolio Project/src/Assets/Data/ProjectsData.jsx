@@ -6,13 +6,13 @@ export const ProjectsData = [
 
     },
     {
-        title: 'This Website',
-        link: 'https://github.com/seannkelleyy/Portfolio-Project',
-        image: ''
-    },
-    {
         title: 'Mortgage Calculator',
         link: 'https://github.com/seannkelleyy/MortgageCalculator',
         image: './src/assets/images/mortgageCalculator.png'
+    },
+    {
+        title: 'This Website',
+        link: 'https://github.com/seannkelleyy/Portfolio-Project',
+        image: './src/assets/images/portfolioProject.png'
     },
 ];

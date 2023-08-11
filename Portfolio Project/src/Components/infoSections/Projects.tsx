@@ -13,7 +13,10 @@ const Projects = () => {
 				{ProjectsData.map((project, index) => {
 					return (
 						<p key={index}>
-							<a href={project.link}>
+							<a
+								className='link'
+								href={project.link}
+							>
 								<img
 									src={project.image}
 									alt={project.title}

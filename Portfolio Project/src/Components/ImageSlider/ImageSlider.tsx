@@ -46,9 +46,12 @@ const ImageSlider = () => {
 			className='image-slider-container'
 		>
 			<p>Thanks for visiting my portfolio, enjoy these memes/photos!</p>
-			<div className='standard-button'>
-				<button onClick={handleClick}>{current === 0 ? 'Seans Memes' : current === 1 ? 'Pretty Photos' : 'Trending Gifs'}</button>
-			</div>
+			<button
+				className='standard-button'
+				onClick={handleClick}
+			>
+				{current === 0 ? 'Seans Memes' : current === 1 ? 'Pretty Photos' : 'Trending Gifs'}
+			</button>
 			<section className='slider'>
 				<button
 					className='left-arrow'

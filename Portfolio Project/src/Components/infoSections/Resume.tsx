@@ -14,12 +14,10 @@ const Resume = () => {
 					alt='Seans Resume'
 					height='100%'
 				/>
-				<div className='standard-button'>
-					<button>
-						<a href='./src/assets/resume/Sean Kelley Resume 2023.pdf'>Download</a>
-					</button>
-				</div>
 			</section>
+			<button className='standard-button'>
+				<a href='./src/assets/resume/Sean Kelley Resume 2023.pdf'>Download</a>
+			</button>
 		</article>
 	)
 }

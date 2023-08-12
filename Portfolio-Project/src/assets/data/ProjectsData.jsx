@@ -2,7 +2,7 @@ export const ProjectsData = [
     {
         title: 'My first website',
         link: 'https://github.com/seannkelleyy/Website',
-        image: '../../images/firstWebsite.png'
+        image: 'firstWebsite.png'
 
     },
     {

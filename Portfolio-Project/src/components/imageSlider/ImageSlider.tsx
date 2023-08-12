@@ -50,7 +50,7 @@ const ImageSlider = () => {
 				className='standard-button'
 				onClick={handleClick}
 			>
-				{current === 0 ? 'Seans Memes' : current === 1 ? 'Pretty Photos' : 'Trending Gifs'}
+				{current === 0 ? 'Seans Memes' : current === 1 ? 'Cool Photos' : 'Trending Gifs'}
 			</button>
 			<section className='slider'>
 				<button

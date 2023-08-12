@@ -18,7 +18,7 @@ const NameAndPhoto = () => {
 			</div>
 			<div className='intro'>
 				<p>
-					I am a software engineering intern at Neudesic and a student at The Ohio State University. I am very interested in full-stack development, with experience working with C#
+					I am a software engineer intern at Neudesic and a student at The Ohio State University. I am very interested in full-stack development, with experience working with C#
 					and .NET, as well as ReactJS. Software development is my passion and I am always looking to learn new things.
 				</p>
 			</div>

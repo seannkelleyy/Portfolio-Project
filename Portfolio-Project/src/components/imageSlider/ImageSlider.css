@@ -16,6 +16,7 @@
 .image {
   width: 45vw;
   height: 28vw;
+  border-radius: .5rem;
 }
 
 .image-viewport {

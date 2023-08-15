@@ -5,7 +5,7 @@ import AboutMe from './components/aboutMe/AboutMe'
 import Projects from './components/infoSections/Projects'
 import Resume from './components/infoSections/Resume'
 import ImageSlider from './components/imageSlider/ImageSlider'
-import { Contact } from './components/infoSections/contact'
+import Contact from './components/infoSections/Contact'
 
 const App = () => {
 	return (

@@ -2,17 +2,17 @@ export const ProjectsData = [
     {
         title: 'My first website',
         link: 'https://github.com/seannkelleyy/Website',
-        image: 'firstWebsite.png'
+        image: './src/assets/images/firstWebsite.png'
 
     },
     {
         title: 'Mortgage Calculator',
         link: 'https://github.com/seannkelleyy/MortgageCalculator',
-        image: '../../images/mortgageCalculator.png'
+        image: './src/assets/images/mortgageCalculator.png'
     },
     {
         title: 'This Website',
         link: 'https://github.com/seannkelleyy/Portfolio-Project',
-        image: '../../images/portfolioProject.png'
+        image: './src/assets/images/portfolioProject.png'
     },
 ];

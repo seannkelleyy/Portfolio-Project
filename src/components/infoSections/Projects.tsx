@@ -1,5 +1,5 @@
 import './InfoSections.css'
-import { ProjectsData } from '../../assets/data/ProjectsData'
+import { ProjectsData } from '../../data/ProjectsData'
 import React from 'react'
 
 const Projects = () => {

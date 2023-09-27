@@ -12,7 +12,7 @@ const NameAndPhoto = () => {
 			</div>
 			<div className='main-image'>
 				<img
-					src='src/assets/images/Sean.jpg'
+					src='/sean.jpg'
 					alt='Sean Kelley'
 				/>
 			</div>

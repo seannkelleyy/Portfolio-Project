@@ -1,29 +1,29 @@
 export const Memes = [
     {
-        image: './src/assets/images/Meme1.jpg',
+        image: '/meme1.jpg',
         url: '', 
         author: ''
     },
     {
-        image: './src/assets/images/Meme2.jpg'
+        image: '/meme2.jpg'
         ,
         url: '', 
         author: ''
     },
     {
-        image: './src/Assets/images/Meme3.jpg'
+        image: '/meme3.jpg'
         ,
         url: '', 
         author: ''
     },
     {
-        image: './src/Assets/images/Meme4.jpg'
+        image: '/meme4.jpg'
         ,
         url: '', 
         author: ''
     },
     {
-        image: './src/Assets/images/Meme5.PNG'
+        image: '/meme5.PNG'
         ,
         url: '', 
         author: ''

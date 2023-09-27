@@ -1,6 +1,6 @@
 import './ImageSlider.css'
 import { useState } from 'react'
-import { Memes } from '../../assets/data/Memes'
+import { Memes } from '../../data/Memes'
 import { PictureService } from '../../services/PictureServices'
 import { GifService } from '../../services/GifServices'
 import React from 'react'

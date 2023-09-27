@@ -8,26 +8,26 @@ const SideBar = () => {
 		>
 			<a href='#about-me'>
 				<img
-					src='./src/assets/images/personIcon.png'
+					src='/personIcon.png'
 					alt='image icon'
 				/>
 			</a>
 			<a href='#projects'>
 				<img
-					src='./src/assets/images/projectsIcon.png'
+					src='/projectsIcon.png'
 					alt='image icon'
 				/>
 			</a>
 			<a href='#resume'>
 				<img
-					src='./src/assets/images/resumeIcon.png'
+					src='/resumeIcon.png'
 					alt='image icon'
 				/>
 			</a>
 
 			<a href='#image-slider'>
 				<img
-					src='./src/assets/images/imageIcon.png'
+					src='/imageIcon.png'
 					alt='image icon'
 				/>
 			</a>

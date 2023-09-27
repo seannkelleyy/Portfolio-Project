@@ -12,7 +12,7 @@ const NavBar = () => {
 						href='/index.html'
 					>
 						<img
-							src='./src/Assets/Images/SK.png'
+							src='/SK.png'
 							alt='Sean Kelley'
 							width='50'
 							height='50'
@@ -26,7 +26,7 @@ const NavBar = () => {
 								<img
 									className='logo'
 									alt='Github'
-									src='./src/Assets/Images/githubWhite.svg'
+									src='/githubWhite.svg'
 									width='50'
 									height='50'
 								/>
@@ -37,7 +37,7 @@ const NavBar = () => {
 								<img
 									className='logo'
 									alt='Linkedin'
-									src='./src/Assets/Images/linkedIn.svg'
+									src='/linkedIn.svg'
 									width='50'
 									height='50'
 								/>
@@ -48,7 +48,7 @@ const NavBar = () => {
 								<img
 									className='logo'
 									alt='Email'
-									src='./src/Assets/Images/email.png'
+									src='/email.png'
 									width='50'
 									height='50'
 								/>

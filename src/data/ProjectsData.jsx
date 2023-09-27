@@ -15,4 +15,9 @@ export const ProjectsData = [
         link: 'https://github.com/seannkelleyy/Portfolio-Project',
         image: '/portfolioProject.png'
     },
+        {
+        title: 'Breeze Budgeting',
+        link: 'https://github.com/seannkelleyy/Breeze',
+        image: '/breeze.png'
+    },
 ];

@@ -1,5 +1,5 @@
 .image-slider-container {
-  width: 90vw;
+  width: 50vw;
   background-color: var(--lightModeBox3);
   display: flex;
   flex-direction: column;
@@ -14,8 +14,8 @@
 }
 
 .image {
-  width: 45vw;
-  height: 28vw;
+  width: 35vw;
+  height: 21vw;
   border-radius: .5rem;
 }
 

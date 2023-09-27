@@ -51,7 +51,7 @@
 
 @media screen and (0 < width < 900px) {
   .resume-section, .projects-section{
-    width: 100vw;
+    width: 90vw;
   }
 
   .resume-section img {

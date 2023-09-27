@@ -48,6 +48,10 @@
     opacity: 0;
   }
 
+  .image-slider-container {
+    width: 90vw;
+  }
+
   .image-slider {
     width: 100vw;
   }

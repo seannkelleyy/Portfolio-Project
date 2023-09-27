@@ -20,6 +20,10 @@
   border-radius: .5rem;
 }
 
+.resume-image{
+  width: 30vw;
+}
+
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -55,11 +59,11 @@
   }
 
   .resume-section img {
-    width: 90vw;
+    width: 85vw;
   }
 
   .project-image {
-    width: 90vw;
+    width: 85vw;
   }
 
   .projects-images-section {

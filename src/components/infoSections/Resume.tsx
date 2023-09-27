@@ -10,6 +10,7 @@ const Resume = () => {
 			<h2>Resume</h2>
 			<section className='resume'>
 				<img
+					className='resume-img'
 					src='/seansResume.png'
 					alt='Seans Resume'
 					height='100%'

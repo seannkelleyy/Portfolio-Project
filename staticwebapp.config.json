@@ -2,5 +2,8 @@
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": ["/src/assets/images/*.{png,jpg,gif}", "/css/*"]
+  }, 
+  "mimeTypes": {
+    ".png": "image/png"
   }
 }

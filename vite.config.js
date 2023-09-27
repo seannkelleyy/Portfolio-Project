@@ -6,6 +6,7 @@ export default defineConfig({
   root: '',
   build: {
     outDir: 'dist',
-    assetsDir: 'src/assets'
+    assetsDir: 'assets',
+    assetsInclude: ['**/*.pdf', '**/*.jpg', '**/*.png', '**/*.gif', '**/*.svg']
   }
 })

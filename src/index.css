@@ -1,10 +1,10 @@
 * {
   font-family: Helvetica, Calibri, sans-serif;
   text-align: center;
-  --lightModeBackground: #cfcfcf;
-  --lightModeBox1: #949494;
-  --lightModeBox2: #9a9a9a;
-  --lightModeBox3: #949494;
+  --lightModeBackground: #dbdbdb;
+  --lightModeBox1: #bbbbbb;
+  --lightModeBox2: #bbbbbb;
+  --lightModeBox3: #bbbbbb;
   --darkModeBackground: #111113;
   --darkModeBox1: #1d2544;
   --darkModeBox2: #1a372a;

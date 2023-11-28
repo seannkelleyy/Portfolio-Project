@@ -1,6 +1,6 @@
 # Portfolio-Project
 
-Portfolio Project for my Neudesic Internship
+Portfolio Project
 
 This project is a personal portfolio built with React.
 

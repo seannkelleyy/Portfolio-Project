@@ -3,6 +3,7 @@
 Portfolio Project
 
 This project is a personal portfolio built with React.
+This site can be viewed at www.seannkelleyy.com
 
 Written by: Sean Kelley
 

@@ -8,5 +8,8 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     assetsInclude: ['**/*.pdf', '**/*.jpg', '**/*.png', '**/*.gif', '**/*.svg']
+  },
+  server: {
+    port: 5173
   }
 })

@@ -20,4 +20,9 @@ export const ProjectsData = [
         link: 'https://github.com/seannkelleyy/Breeze',
         image: '/breeze.png'
     },
+    {
+        title: 'Pomodoro Timer',
+        link: 'https://github.com/seannkelleyy/Pomodoro',
+        image: '/pomodoro.png'
+        }
 ];

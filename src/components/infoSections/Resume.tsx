@@ -17,7 +17,7 @@ const Resume = () => {
 				/>
 			</section>
 			<button className='standard-button'>
-				<a href='/Sean Kelley Resume 2023.pdf'>Download</a>
+				<a href='/Sean Kelley Resume.pdf'>Download</a>
 			</button>
 		</article>
 	)

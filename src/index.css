@@ -11,6 +11,8 @@
 	--darkModeBox3: #32213e;
 	--buttonLight: black;
 	--buttonDark: white;
+	--text: black;
+	--textDark: white;
 	overflow-x: hidden;
 	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
@@ -18,7 +20,7 @@
 /*----------Dark / Light Mode ------->*/
 .dark {
 	background-color: var(--darkModeBackground);
-	color: white;
+	color: var(--textDark);
 
 	.top-bar-container header {
 		background-color: var(--darkModeBox);
@@ -55,6 +57,10 @@
 
 	.link {
 		color: var(--buttonDark);
+	}
+
+	a {
+		color: var(--textDark);
 	}
 }
 
@@ -100,12 +106,15 @@ s .standard-button button:hover {
 	text-decoration: none;
 	color: var(--buttonLight);
 }
+
+a {
+	color: var(--text);
+}
 /*----------Standard HTML Elements ------->*/
 
-a:hover {
-	color: blue;
+a {
+	color: var(--text);
 }
-
 h1 {
 	font-size: 2em;
 }

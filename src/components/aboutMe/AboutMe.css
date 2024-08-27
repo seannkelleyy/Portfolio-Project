@@ -1,47 +1,47 @@
-.name-and-photo{
-  background: var(--lightModeBackground);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.name-and-photo {
+	background: var(--lightModeBackground);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
-.main-image img{
-  width: 25%;
-  border-radius: 100%;
-  border: .2vw solid black;
+.main-image img {
+	width: 30%;
+	border-radius: 100%;
+	border: 0.2vw solid black;
 }
 
 .name {
-  padding-top: 5vh;
-  font-size: 2.5em;
-  overflow: hidden;
+	padding-top: 5vh;
+	font-size: 2em;
+	overflow: hidden;
 }
 
 .intro {
-  width: 125ch;
-  overflow: hidden;
+	max-width: 125ch;
+	font-size: 0.75em;
 }
 
 @media screen and (height < 1100px) {
-  .name-and-photo{
-    height: auto;
-  }
+	.name-and-photo {
+		height: auto;
+	}
 }
 
-@media screen and (0 < width < 900px) {
-  .main-image img {
-    width: 65vw;
-  }
+@media screen and (0 < width < 800px) {
+	.main-image img {
+		width: 50%;
+	}
 
-  .name{
-    padding-top: 8vh;
-    font-size: 2em;
-  }
+	.name {
+		padding-top: 8vh;
+		font-size: 1.5em;
+	}
 
-  .intro {
-    width: 90vw;
-  }
-
+	.intro {
+		width: 90vw;
+	}
 }
+

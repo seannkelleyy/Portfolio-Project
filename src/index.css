@@ -1,129 +1,131 @@
 * {
-  font-family: Helvetica, Calibri, sans-serif;
-  text-align: center;
-  --lightModeBackground: #dbdbdb;
-  --lightModeBox1: #bbbbbb;
-  --lightModeBox2: #bbbbbb;
-  --lightModeBox3: #bbbbbb;
-  --darkModeBackground: #111113;
-  --darkModeBox1: #1d2544;
-  --darkModeBox2: #1a372a;
-  --darkModeBox3: #32213e;
-  --buttonLight: black;
-  --buttonDark: white;
-  overflow-x: hidden;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+	font-family: Helvetica, Calibri, sans-serif;
+	text-align: center;
+	--lightModeBackground: #dbdbdb;
+	--lightModeBox1: #bbbbbb;
+	--lightModeBox2: #bbbbbb;
+	--lightModeBox3: #bbbbbb;
+	--darkModeBackground: #111113;
+	--darkModeBox1: #1d2544;
+	--darkModeBox2: #1a372a;
+	--darkModeBox3: #32213e;
+	--buttonLight: black;
+	--buttonDark: white;
+	--text: black;
+	--textDark: white;
+	overflow-x: hidden;
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
-
 
 /*----------Dark / Light Mode ------->*/
 .dark {
-  background-color: var(--darkModeBackground);
-  color: white;
+	background-color: var(--darkModeBackground);
+	color: var(--textDark);
 
-  .top-bar-container header {
-    background-color: var(--darkModeBox);
-  }
-  
-  .name-and-photo {
-    background-color: var(--darkModeBackground);
-  }
+	.top-bar-container header {
+		background-color: var(--darkModeBox);
+	}
 
-  .projects-section {
-    background-color: var(--darkModeBox1);
-  }
+	.name-and-photo {
+		background-color: var(--darkModeBackground);
+	}
 
-  .resume-section {
-    background-color: var(--darkModeBox3);
-  }
+	.projects-section {
+		background-color: var(--darkModeBox1);
+	}
 
-  .image-slider-container {
-    background-color: var(--darkModeBox2);
-  }
+	.resume-section {
+		background-color: var(--darkModeBox3);
+	}
 
-  .light-mode-button {
-    filter: invert(0%);
-  }
+	.image-slider-container {
+		background-color: var(--darkModeBox2);
+	}
 
-  .side-bar a, .logo {
-    filter: invert(100%);
-  }
+	.light-mode-button {
+		filter: invert(0%);
+	}
 
-  .standard-button {
-    color: var(--buttonDark);
-  }
+	.side-bar a,
+	.logo {
+		filter: invert(100%);
+	}
 
-  .link {
-    color: var(--buttonDark);
-  }
+	.standard-button {
+		color: var(--buttonDark);
+	}
+
+	.link {
+		color: var(--buttonDark);
+	}
+
+	a {
+		color: var(--textDark);
+	}
 }
 
 .light {
-  background-color: var(--lightModeBackground);
-  color: black;
+	background-color: var(--lightModeBackground);
+	color: black;
 }
 
 .page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
 }
 
 .standard-button {
-  margin: auto;
-  border: 2px dashed black;
-  background-color: transparent;
-  border-radius: .5rem;
-  font-weight: bolder;
-  font-size: 1rem;
-  color: var(--button);
-  padding: .75rem 1.5rem;
-  cursor: pointer;
-  float: left;
-}s
-
-.standard-button button:hover {
-  border: 2px solid black;
+	margin: auto;
+	border: 2px dashed black;
+	background-color: transparent;
+	border-radius: 0.5rem;
+	font-weight: bolder;
+	font-size: 1rem;
+	color: var(--button);
+	padding: 0.75rem 1.5rem;
+	cursor: pointer;
+	float: left;
+}
+s .standard-button button:hover {
+	border: 2px solid black;
 }
 
-.standard-button a{
-  text-decoration: none;
-  color: var(--button);
+.standard-button a {
+	text-decoration: none;
+	color: var(--button);
 }
 
-.standard-button a:hover{
-  color: var(--button);
+.standard-button a:hover {
+	color: var(--button);
 }
 
 .link {
-  text-decoration: none;
-  color: var(--buttonLight);
+	text-decoration: none;
+	color: var(--buttonLight);
+}
+
+a {
+	color: var(--text);
 }
 /*----------Standard HTML Elements ------->*/
 
-a:hover{
-  color: blue;
+a {
+	color: var(--text);
 }
-
 h1 {
-  font-size: 2em;
+	font-size: 2em;
 }
 
-h2{
-  font-size: 2.25em;
+h2 {
+	font-size: 2.25em;
 }
 
-p{
-  margin: 0;
-  font-size: 1.75em;
-
-  padding: 2.5vw;
+p {
+	margin: 0;
+	font-size: 1.75em;
+	padding: 2.5vw;
 }
 
-@media screen and (0 < width < 900px) {
-  p {
-    font-size: 1em;
-  }
-}

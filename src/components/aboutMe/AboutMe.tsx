@@ -18,8 +18,8 @@ const NameAndPhoto = () => {
 			</div>
 			<div className='intro'>
 				<p>
-					I am a software engineer intern at Neudesic and a student at The Ohio State University. I am very interested in full-stack development, with experience working with C#
-					and .NET, as well as ReactJS. Software development is my passion and I am always looking to learn new things.
+					I am a senior at The Ohio State University. I have experience in full stack development using React, .NET, Docker and Azure while working on a team using AGILE. I am
+					currently seeking a full-time position as a software engineer starting in January 2025 and a part-time position until then.
 				</p>
 			</div>
 			<br />
@@ -28,3 +28,4 @@ const NameAndPhoto = () => {
 }
 
 export default NameAndPhoto
+

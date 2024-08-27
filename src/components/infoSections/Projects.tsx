@@ -1,6 +1,7 @@
 import './InfoSections.css'
 import { ProjectsData } from '../../data/ProjectsData'
 import React from 'react'
+import { ProjectItem } from './projects/Project'
 
 const Projects = () => {
 	return (
@@ -12,19 +13,10 @@ const Projects = () => {
 			<section className='projects-images-section'>
 				{ProjectsData.map((project, index) => {
 					return (
-						<p key={index}>
-							<a
-								className='link'
-								href={project.link}
-							>
-								<img
-									src={project.image}
-									alt={project.title}
-									className='project-image'
-								/>
-								<figcaption>{project.title}</figcaption>
-							</a>
-						</p>
+						<ProjectItem
+							key={index}
+							project={project}
+						/>
 					)
 				})}
 			</section>
@@ -33,3 +25,4 @@ const Projects = () => {
 }
 
 export default Projects
+

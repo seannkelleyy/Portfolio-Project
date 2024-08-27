@@ -1,72 +1,76 @@
- .resume-section, .projects-section {
-  padding: .5vw;
-  width: 50vw;
-  border-radius: .5rem;
+.resume-section,
+.projects-section {
+	padding: 0.5vw;
+	width: 50vw;
+	border-radius: 0.5rem;
 }
 
 .projects-section {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--lightModeBox1);
+	display: flex;
+	flex-direction: column;
+	background-color: var(--lightModeBox1);
 }
 
 .resume-section {
-  background-color: var(--lightModeBox2);
-  width: 40vw;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+	background-color: var(--lightModeBox2);
+	width: 40vw;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
 }
 
 .resume-section img {
-  width: 50%;
-  border-radius: .5rem;
+	width: 50%;
+	border-radius: 0.5rem;
 }
 
 .contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
 }
 
-.contact-section p{
-  padding: .0625rem;
-  font-size: 1rem;
+.contact-section p {
+	padding: 0.0625rem;
+	font-size: 1rem;
 }
 
 .project-image {
-  height: auto;
-  width: 50%;
-  border-radius: .5rem;
-  border: .0625rem black solid;
+	height: auto;
+	width: 50%;
+	border-radius: 0.5rem;
+	border: 0.0625rem black solid;
 }
 
 .project-image:hover {
-  transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 .projects-images-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 @media screen and (0 < width < 900px) {
-  .resume-section, .projects-section{
-    width: 90vw;
-  }
+	.resume-section,
+	.projects-section {
+		width: 90vw;
+	}
 
-  .resume-section img {
-    width: 85vw;
-  }
+	.resume-section img {
+		width: 85vw;
+	}
 
-  .project-image {
-    width: 85vw;
-  }
+	.project-image {
+		width: 85vw;
+	}
 
-  .projects-images-section {
-    flex-wrap: wrap;
-  }
+	.projects-images-section {
+		flex-wrap: wrap;
+	}
 }
+

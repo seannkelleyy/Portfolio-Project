@@ -107,14 +107,12 @@ s .standard-button button:hover {
 	color: var(--buttonLight);
 }
 
-a {
-	color: var(--text);
-}
 /*----------Standard HTML Elements ------->*/
 
 a {
 	color: var(--text);
 }
+
 h1 {
 	font-size: 2em;
 }

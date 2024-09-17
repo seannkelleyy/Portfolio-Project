@@ -8,8 +8,9 @@
 	justify-content: space-between;
 	width: 100%;
 	left: 0%;
-	top: 0%;
+	top: 7%;
 	height: 8%;
+	overflow-y: hidden;
 }
 
 .logo-box {
@@ -92,5 +93,17 @@ nav ul {
 	.side-bar {
 		display: none;
 	}
+}
+
+.warning {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(219, 68, 68);
+	padding: 1rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0%;
 }
 

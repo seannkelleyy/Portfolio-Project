@@ -8,11 +8,13 @@ import Projects from './components/infoSections/Projects.js'
 import Resume from './components/infoSections/Resume.js'
 import { NavBar } from './components/navigation/NavBar.js'
 import SideBar from './components/navigation/SideBar.js'
+import { WarningBar } from './components/navigation/WarningBar.js'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 	<React.StrictMode>
 		<>
 			<header>
+				<WarningBar />
 				<NavBar />
 				<SideBar />
 			</header>
